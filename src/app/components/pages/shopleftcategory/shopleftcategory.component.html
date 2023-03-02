@@ -1,0 +1,56 @@
+  <!-- <ul class="list-group">
+  <li>
+    <a routerLink="/product"><i class="fa fa-gift"></i>Tüm Ürünler</a>
+  </li>
+  <li (click)="setCurrentCategory(category)" routerLink="/spots/category/{{ category.categoryId }}"
+    *ngFor="let category of categories" [class]="getCurrentCategoryClass(category)">
+
+    <a><i class="fa fa-gift"></i> {{ category.categoryName }}<span>65</span></a>
+  </li>
+</ul>
+
+<h5 *ngIf="currentCategory">{{currentCategory.categoryName}} seçtiniz</h5>  
+
+
+
+<div class="widget categories-widget mb-40">
+  <h5 class="widget-title">Kategoriler</h5>
+  <ul>
+
+    <li>
+       <a [class]="getAllCategoryClass()"><i ></i>Tüm Ürünler</a> 
+    </li>
+
+      <li (click)="setCurrentCategory(category)"  routerLink="/shop-left/category/{{ category.categoryId }}"
+       *ngFor="let category of categories" [class]="getCurrentCategoryClass(category)">
+          <a>{{ category.categoryName }}<span></span></a>
+      </li>
+  </ul>
+</div>
+<h5 *ngIf="currentCategory">{{currentCategory.categoryName}} seçtiniz</h5>
+ 
+
+
+<ul class="list-group" >
+  <li  class="list-group-item" [class]="getAllCategoryClass()" routerLink = "/shop-left"><a>Tüm Ürünler</a></li>
+  <li class="list-group-item" (click)="setCurrentCategory(category)"
+  routerLink = "/spots/category/{{category.categoryId}}"
+  *ngFor="let category of categories" 
+  [class]="getCurrentCategoryClass(category)">
+  {{category.categoryName}}</li>
+</ul>
+
+<h5 *ngIf="currentCategory">{{currentCategory.categoryName}} seçtiniz</h5>  -->
+
+
+<div class="widget categories-widget mb-40">
+  <h5 class="widget-title">Kategoriler</h5>
+  <ul>
+    <li>
+      <a routerLink="/shop-left" >Tüm Ürünler</a>
+    </li>
+      <li *ngFor="let category of categories" >
+          <a routerLink="/shop-left/{{category.categoryId}}" >{{category.categoryName}}<span *ngIf="category.numberofpost">{{category.categoryName}}</span></a>
+      </li>
+  </ul>
+</div>

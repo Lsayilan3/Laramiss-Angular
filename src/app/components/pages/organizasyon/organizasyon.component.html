@@ -1,0 +1,495 @@
+<app-header></app-header>
+<app-breadcrumb></app-breadcrumb>
+<!--====== SHOP SECTION START ======-->
+<section class="Shop-section pt-120 pb-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Shop Sidebar -->
+            <div class="col-lg-4 col-md-10 col-sm-10">
+                 </div>
+            <div class="col-lg-12 col-md-12">
+                <div class="shop-products-wrapper">
+                    <div class="product-wrapper restaurant-tab-area">
+                        <div class="row">
+
+
+                            <!-- TS JS ÇEKİM DİNAMİK OLMAYAN ORGANİZASYON -->
+
+
+                            <div class="col-lg-4 col-md-6" *ngFor="let shopgrida of shopgridposta">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{shopgrida.img}}" alt="images">
+                                        <div class="badges" *ngIf="shopgrida.tag">
+                                            <span class="price discounted">{{shopgrida.tag}}</span>
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="partiEğlence"><i class="far fa-heart"></i></a>
+                                            <a href="partiEğlence"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="partiEğlence" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a href="partiEğlence">{{shopgrida.title}} </a>
+                                        </h4>
+                                        <span> {{shopgrida.detay}} </span>
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>  -->
+                                        <a href="partiEğlence" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+
+                            <div class="col-lg-4 col-md-6" *ngFor="let shopgridb of shopgridpostb">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{shopgridb.img}}" alt="images">
+                                        <div class="badges" *ngIf="shopgridb.tag">
+                                            <span class="price discounted">{{shopgridb.tag}}</span>
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="contact"><i class="far fa-heart"></i></a>
+                                            <a href="contact"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="organizasyonDüğün" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a href="organizasyonDüğün">{{shopgridb.title}} </a>
+                                        </h4>
+                                        <span> {{shopgridb.detay}} </span>
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>  -->
+                                        <a href="organizasyonDüğün" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+
+                            <div class="col-lg-4 col-md-6" *ngFor="let shopgridc of shopgridpostc">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{shopgridc.img}}" alt="images">
+                                        <div class="badges" *ngIf="shopgridc.tag">
+                                            <span class="price discounted">{{shopgridc.tag}}</span>
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="organizasyonNisan"><i class="far fa-heart"></i></a>
+                                            <a href="organizasyonNisan"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="organizasyonNisan" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a href="organizasyonNisan">{{shopgridc.title}} </a>
+                                        </h4>
+                                        <span> {{shopgridc.detay}} </span>
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>  -->
+                                        <a href="organizasyonNisan" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            
+                            <div class="col-lg-4 col-md-6" *ngFor="let shopgridd of shopgridpostd">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{shopgridd.img}}" alt="images">
+                                        <div class="badges" *ngIf="shopgridd.tag">
+                                            <span class="price discounted">{{shopgridd.tag}}</span>
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="organizasyonKına"><i class="far fa-heart"></i></a>
+                                            <a href="organizasyonKına"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="organizasyonKına" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a href="organizasyonKına">{{shopgridd.title}} </a>
+                                        </h4>
+                                        <span> {{shopgridd.detay}} </span>
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>  -->
+                                        <a href="organizasyonKına" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            
+                            <div class="col-lg-4 col-md-6" *ngFor="let shopgridaa of shopgridpostaa">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{shopgridaa.img}}" alt="images">
+                                        <div class="badges" *ngIf="shopgridaa.tag">
+                                            <span class="price discounted">{{shopgridaa.tag}}</span>
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="organizasyonSunnet"><i class="far fa-heart"></i></a>
+                                            <a href="organizasyonSunnet"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="organizasyonSunnet" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a href="organizasyonSunnet">{{shopgridaa.title}} </a>
+                                        </h4>
+                                        <span> {{shopgridaa.detay}} </span>
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>  -->
+                                        <a href="organizasyonSunnet" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            
+                            <div class="col-lg-4 col-md-6" *ngFor="let shopgridab of shopgridpostab">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{shopgridab.img}}" alt="images">
+                                        <div class="badges" *ngIf="shopgridab.tag">
+                                            <span class="price discounted">{{shopgridab.tag}}</span>
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="organizasyonBabyShower"><i class="far fa-heart"></i></a>
+                                            <a href="organizasyonBabyShower"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="organizasyonBabyShower" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a href="organizasyonBabyShower">{{shopgridab.title}} </a>
+                                        </h4>
+                                        <span> {{shopgridab.detay}} </span>
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>  -->
+                                        <a href="organizasyonBabyShower" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+
+                            
+                            <div class="col-lg-4 col-md-6" *ngFor="let shopgridac of shopgridpostac">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{shopgridac.img}}" alt="images">
+                                        <div class="badges" *ngIf="shopgridac.tag">
+                                            <span class="price discounted">{{shopgridac.tag}}</span>
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="personelTemini"><i class="far fa-heart"></i></a>
+                                            <a href="personelTemini"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="personelTemini" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a href="personelTemini">{{shopgridac.title}} </a>
+                                        </h4>
+                                        <span> {{shopgridac.detay}} </span>
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>  -->
+                                        <a href="personelTemini" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div> 
+                            
+
+                            
+                            <div class="col-lg-4 col-md-6" *ngFor="let shopgridad of shopgridpostad">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{shopgridad.img}}" alt="images">
+                                        <div class="badges" *ngIf="shopgridad.tag">
+                                            <span class="price discounted">{{shopgridad.tag}}</span>
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="ekipmanKiralama"><i class="far fa-heart"></i></a>
+                                            <a href="ekipmanKiralama"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="ekipmanKiralama" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a href="ekipmanKiralama">{{shopgridad.title}} </a>
+                                        </h4>
+                                        <span> {{shopgridad.detay}} </span>
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>  -->
+                                        <a href="ekipmanKiralama" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            
+                            <div class="col-lg-4 col-md-6" *ngFor="let shopgridba of shopgridpostba">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{shopgridba.img}}" alt="images">
+                                        <div class="badges" *ngIf="shopgridba.tag">
+                                            <span class="price discounted">{{shopgridba.tag}}</span>
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="animasyonEkibi"><i class="far fa-heart"></i></a>
+                                            <a href="animasyonEkibi"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="animasyonEkibi" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a href="animasyonEkibi">{{shopgridba.title}} </a>
+                                        </h4>
+                                        <span> {{shopgridba.detay}} </span>
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>  -->
+                                        <a href="animasyonEkibi" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+
+                            
+                            <div class="col-lg-4 col-md-6" *ngFor="let shopgridbb of shopgridpostbb">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{shopgridbb.img}}" alt="images">
+                                        <div class="badges" *ngIf="shopgridbb.tag">
+                                            <span class="price discounted">{{shopgridbb.tag}}</span>
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="trioEkibi"><i class="far fa-heart"></i></a>
+                                            <a href="trioEkibi"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="trioEkibi" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a href="trioEkibi">{{shopgridbb.title}} </a>
+                                        </h4>
+                                        <span> {{shopgridbb.detay}} </span>
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>  -->
+                                        <a href="trioEkibi" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+
+
+                            
+                            <div class="col-lg-4 col-md-6" *ngFor="let shopgridbc of shopgridpostbc">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{shopgridbc.img}}" alt="images">
+                                        <div class="badges" *ngIf="shopgridbc.tag">
+                                            <span class="price discounted">{{shopgridbc.tag}}</span>
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="piknikEkibi"><i class="far fa-heart"></i></a>
+                                            <a href="piknikEkibi"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="piknikEkibi" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a href="piknikEkibi">{{shopgridbc.title}} </a>
+                                        </h4>
+                                        <span> {{shopgridbc.detay}} </span>
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>  -->
+                                        <a href="piknikEkibi" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+
+
+                            
+                            <div class="col-lg-4 col-md-6" *ngFor="let shopgridbd of shopgridpostbd">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{shopgridbd.img}}" alt="images">
+                                        <div class="badges" *ngIf="shopgridbd.tag">
+                                            <span class="price discounted">{{shopgridbd.tag}}</span>
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="sokakLezzetleri"><i class="far fa-heart"></i></a>
+                                            <a href="sokakLezzetleri"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="sokakLezzetleri" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a href="sokakLezzetleri">{{shopgridbd.title}} </a>
+                                        </h4>
+                                        <span> {{shopgridbd.detay}} </span>
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>  -->
+                                        <a href="sokakLezzetleri" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            
+                            <div class="col-lg-4 col-md-6" *ngFor="let shopgridca of shopgridpostca">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{shopgridca.img}}" alt="images">
+                                        <div class="badges" *ngIf="shopgridca.tag">
+                                            <span class="price discounted">{{shopgridca.tag}}</span>
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="organizasyonAcılıs"><i class="far fa-heart"></i></a>
+                                            <a href="organizasyonAcılıs"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="organizasyonAcılıs" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a href="organizasyonAcılıs">{{shopgridca.title}} </a>
+                                        </h4>
+                                        <span> {{shopgridca.detay}} </span>
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>  -->
+                                        <a href="organizasyonAcılıs" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            
+                            <div class="col-lg-4 col-md-6" *ngFor="let shopgridcb of shopgridpostcb">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{shopgridcb.img}}" alt="images">
+                                        <div class="badges" *ngIf="shopgridcb.tag">
+                                            <span class="price discounted">{{shopgridcb.tag}}</span>
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="kokteyl"><i class="far fa-heart"></i></a>
+                                            <a href="kokteyl"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="kokteyl" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a href="kokteyl">{{shopgridcb.title}} </a>
+                                        </h4>
+                                        <span> {{shopgridcb.detay}} </span>
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>  -->
+                                        <a href="kokteyl" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="col-lg-4 col-md-6" *ngFor="let shopgridcc of shopgridpostcc">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{shopgridcc.img}}" alt="images">
+                                        <div class="badges" *ngIf="shopgridcc.tag">
+                                            <span class="price discounted">{{shopgridcc.tag}}</span>
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="sirketEğlence"><i class="far fa-heart"></i></a>
+                                            <a href="sirketEğlence"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="sirketEğlence" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a href="sirketEğlence">{{shopgridcc.title}} </a>
+                                        </h4>
+                                        <span> {{shopgridcc.detay}} </span>
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>  -->
+                                        <a href="sirketEğlence" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+
+                            <div class="col-lg-4 col-md-6" *ngFor="let shopgridcd of shopgridpostcd">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{shopgridcd.img}}" alt="images">
+                                        <div class="badges" *ngIf="shopgridcd.tag">
+                                            <span class="price discounted">{{shopgridcd.tag}}</span>
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="catering"><i class="far fa-heart"></i></a>
+                                            <a href="catering"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="catering" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a href="catering">{{shopgridcd.title}} </a>
+                                        </h4>
+                                        <span> {{shopgridcd.detay}} </span>
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>  -->
+                                        <a href="catering" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="col-lg-4 col-md-6" *ngFor="let shopgrid of shopgridpost">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{shopgrid.img}}" alt="images">
+                                        <div class="badges" *ngIf="shopgrid.tag">
+                                            <span class="price discounted">{{shopgrid.tag}}</span>
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="coffeBreak"><i class="far fa-heart"></i></a>
+                                            <a href="coffeBreak"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="coffeBreak" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a href="coffeBreak">{{shopgrid.title}} </a>
+                                        </h4>
+                                        <span> {{shopgrid.detay}} </span>
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>  -->
+                                        <a href="coffeBreak" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+
+                            <!-- BACKEDN ORGANİZASYON -->
+
+                            <div class="col-lg-4 col-md-6" *ngFor="let organizasyon of organizasyons">
+                                <div class="food-box shop-box style-2">
+                                    <div class="thumb">
+                                        <img src="{{baseUrl}}{{organizasyon.photo}}" alt="images">
+                                        <div class="badges" >
+                                            <!-- <span class="price discounted">{{organizasyon.tag}}</span> -->
+                                        </div>
+                                        <div class="button-group">
+                                            <!-- <a href="contact"><i class="far fa-heart"></i></a>
+                                            <a href="contact"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="contact" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-center">
+                                        <h4>
+                                            <a routerLink='/contact'>{{organizasyon.title}} </a>
+                                        </h4>
+                                        <span> {{organizasyon.detay}} </span>
+                                        <!-- <span> {{organizasyon.detay}} </span> -->
+                                         <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>   -->
+                                        <a href="contact" class="main-btn btn-filled mt-10">Detay Görsel</a>
+                                    </div>
+                                </div>
+                            </div>  
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                 <!-- <div class="pagination-wrap">
+                    <app-pagination></app-pagination>
+                </div>  -->
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== SHOP SECTION END ======-->
+<!--====== INSTAGRAM FEED PART START ======-->
+<app-instafeeds></app-instafeeds>
+<!--====== INSTAGRAM FEED PART END ======-->
+<app-footerthree></app-footerthree> 
+<!-- <app-footertwo></app-footertwo> -->

@@ -1,0 +1,104 @@
+<div class="sidebar">
+    <!-- About Author Widget -->
+    <div class="widget about-author-widget mb-40">
+        <h5 class="widget-title">Hakkında</h5>
+        <div class="author-box">
+            <img src="{{authorimg}}" alt="author">
+            <h6>Drone Kamera çekimi</h6>
+            <p>Düğün, nişan, kına , açılış, ve tüm etkinliklerinizi havadan farklı bir gözle görmeye ne dersiniz?
+                Dron kamera sayesinde tüm özel günlerinizi havadan çekim yaparak ölümsüzleştiriyoruz.</p>
+            <ul class="social-icon">
+                <li><a style="cursor: pointer;"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a style="cursor: pointer;"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/kapadokyaorganizasyonvedavet/"><i class="fab fa-instagram"></i></a></li>
+                <li><a style="cursor: pointer;"><i class="fab fa-linkedin"></i></a></li>
+                <li><a style="cursor: pointer;"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Search Widget -->
+    <div class="widget search-widget mb-40">
+        <h5 class="widget-title">Search Objects</h5>
+        <form action="#">
+            <input type="text" placeholder="Search your keyword...">
+            <button type="submit"><i class="far fa-search"></i></button>
+        </form>
+    </div>
+    <!-- Popular Post Widget -->
+    <div class="widget popular-feeds mb-40">
+        <h5 class="widget-title">Popüler Yayınlar</h5>
+        <div class="popular-feed-loop">
+            <div class="single-popular-feed" *ngFor="let popularfeed of popularfeeds">
+                <div class="feed-img">
+                    <img src="{{popularfeed.img}}" alt="Image">
+                </div>
+                <div class="feed-desc">
+                    <h6><a href="blog-detail">{{popularfeed.title}}</a></h6>
+                    <span class="time"><i class="far fa-calendar-alt"></i> {{popularfeed.postdate}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Categories Widget -->
+    <div class="widget categories-widget mb-40">
+        <h5 class="widget-title">Kategoriler</h5>
+        <ul>
+            <li *ngFor="let category of categories">
+                <a href="hediyelik">{{category.title}}<span *ngIf="category.numberofpost">{{category.numberofpost}}</span></a>
+            </li>
+        </ul>
+    </div>
+    <!-- Social Icon Widget -->
+    <div class="widget socail-widget mb-40">
+        <h5 class="widget-title">Haberleri Asla Kaçırmayın</h5>
+        <ul>
+            <li><a style="cursor: pointer;"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a style="cursor: pointer;"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/kapadokyaorganizasyonvedavet/"><i class="fab fa-instagram"></i></a></li>
+            <li><a style="cursor: pointer;"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="mailto:"><i class="fab fa-google"></i></a></li>
+        </ul>
+    </div>
+    <!-- Twitter Feeds Widget -->
+    <div class="widget twitter-feed-widget mb-40">
+        <h5 class="widget-title">Twitter Akışları</h5>
+        <div class="twitter-looop">
+            <div class="single-twitter" *ngFor="let twitterfeed of twitterfeeds">
+                <a href="#">
+                    {{twitterfeed.tweet}}
+                </a>
+                <span class="date">{{twitterfeed.tweetdate}}</span>
+            </div>
+        </div>
+    </div>
+    <!-- Instagram Feeds Widget -->
+    <div class="widget instagram-feed-widget mb-40">
+        <h5 class="widget-title">Instagram Akışları</h5>
+        <ul>
+            <li *ngFor="let instafeed of instafeeds"><img src="{{instafeed.img}}" alt="Image"></li>
+        </ul>
+    </div>
+    <!-- Popular Tags Widget -->
+    <div class="widget popular-tag-widget mb-40">
+        <h5 class="widget-title">Popüler etiketler</h5>
+        <ul>
+            <li *ngFor="let tag of tags"><a href="organizasyon">{{tag.title}}</a></li>
+        </ul>
+    </div>
+    <!-- Banner Ad Widget -->
+    <div class="widget banner-ad-widget">
+        <img src="{{advbanner}}" alt="Image ">
+        <div class="ad-banner-content text-center">
+            <h5 class="mb-3">Herhangi bir sorunuz var mı?</h5>
+            <h5>Bugün bizi arayın?</h5>
+            <div class="icon">
+              <i class="flaticon-phone"></i>
+            </div>
+            <div class="Phone-box">
+              <h4>0-532-453-0435</h4>
+              <hr>
+              <p class="text-white">ajanssahin@hotmail.com</p>
+            </div>
+          </div>
+    </div>
+</div>

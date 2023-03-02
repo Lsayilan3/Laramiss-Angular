@@ -1,0 +1,13 @@
+<div class="instagram-feed-section">
+    <div class="container-fluid p-0">
+        <ngx-slick-carousel class="instagram-slider" #slickModal="slick-carousel" [config]="instagramsliderConfig">
+            <div ngxSlickItem class="single-gallery-image wow fadeInUp" data-wow-delay=".3s" *ngFor="let slider of sliders">
+                <a href="{{baseUrl}}{{slider.photo}}" target="_blank" class="insta-popup">
+                    <img src="{{baseUrl}}{{slider.photo}}" target="_blank" alt="instagram-feed">
+                </a>
+
+             
+            </div>
+        </ngx-slick-carousel>
+    </div>
+</div>

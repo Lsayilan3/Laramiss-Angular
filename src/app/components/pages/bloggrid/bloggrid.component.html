@@ -1,0 +1,37 @@
+<app-header></app-header>
+<app-breadcrumb></app-breadcrumb>
+<!--====== BLOG SECTION START ======-->
+<section class="latest-news pt-120 pb-120">
+    <div class="section-fw">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6" *ngFor="let blog of blogs">
+                <div class="latest-post-box mb-30">
+                    <div class="post-img" style="background-image: url({{baseUrl}}{{blog.photo}});"></div>
+                    <div class="post-desc">
+                        <ul class="post-meta">
+                            <li>
+                                <a style="cursor: pointer;"><i class="fal fa-calendar-alt"></i>{{blog.postDate}}</a>
+                            </li>
+                            <li>
+                                <a style="cursor: pointer;"><i class="fal fa-user"></i>By {{blog.author}}</a>
+                            </li>
+                        </ul>
+                        <h4><a href="blog-grid">{{blog.title}}</a></h4>
+                        <p>{{blog.text}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        
+        <!-- <div class="pagination-wrap mt-50">
+            <app-pagination></app-pagination>
+        </div> -->
+    </div>
+</section>
+<!--====== BLOG SECTION END ======-->
+<!--====== INSTAGRAM FEED PART START ======-->
+<app-instafeeds></app-instafeeds>
+<!--====== INSTAGRAM FEED PART END ======-->
+<app-footerthree></app-footerthree>
