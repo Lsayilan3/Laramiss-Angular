@@ -13,9 +13,11 @@ import 'magnific-popup';
 })
 export class GallerytwoComponent implements OnInit {
 
+ 
+  
   gallerytwoes : GalleryTwo []=[]
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private wowService: NgwWowService , private galleryTwoService: GallerytwoService) {
     this.wowService.init();
@@ -45,10 +47,12 @@ export class GallerytwoComponent implements OnInit {
   //   {img:'../../../../assets/img/aaımg/gal8_570x450.jpg'},
     
   // ];
+
   ngOnInit(): void {
     $(document).ready(function() {
       ($('.popup-image') as any).magnificPopup({type:'image', enabled: true, mainClass: 'mfp-fade'});
     });
   }
+
 
 }

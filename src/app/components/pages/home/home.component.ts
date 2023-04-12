@@ -20,7 +20,7 @@ export class HomeComponent implements AfterViewInit {
 
   sliderTwoes : SliderTwo []=[]
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private wowService: NgwWowService, private enSatanService: EnsatanService, private sliderTwoService : SliderTwoService) {
     this.wowService.init();
@@ -66,17 +66,17 @@ export class HomeComponent implements AfterViewInit {
 
   // Trending collection
   trendingposts = [
-    { img: '../../../../assets/img/aaımg/Home.jpg', title: 'Organizasyon', text: 'Düğün Kına Açılış Sünnet', price: '$345/10gm',url:'organizasyon' },
-    { img: '../../../../assets/img/aaımg/ptttr_370x260.jpg', title: 'Parti Store', text: 'Yaş Günü Ve Özel Günler', price: '$345/10gm', url:'partistore' },
-    { img: '../../../../assets/img/aaımg/110000014453347_370x260.jpg', title: 'Lazer Kesim ve UV Baskı', text: 'Çeşitlendirilebilir Modeller', price: '$345/10gm',url:'lazerkesim' },
-    { img: '../../../../assets/img/aaımg/hediyelik1234_370x260.jpg', title: 'Hediyelik Ürünler', text: 'Çikolata Oyuncak Dekarasyon', price: '$345/10gm' ,url:'hediyelik'},
+    { img: '../../../../assets/img/aaimg/Home.jpg', title: 'Organizasyon', text: 'Düğün Kına Açılış Sünnet', price: '$345/10gm',url:'organizasyon' },
+    { img: '../../../../assets/img/aaimg/ptttr_370x260.jpg', title: 'Parti Store', text: 'Yaş Günü Ve Özel Günler', price: '$345/10gm', url:'partistore' },
+    { img: '../../../../assets/img/aaimg/110000014453347_370x260.jpg', title: 'Lazer Kesim ve UV Baskı', text: 'Çeşitlendirilebilir Modeller', price: '$345/10gm',url:'lazerkesim' },
+    { img: '../../../../assets/img/aaimg/hediyelik1234_370x260.jpg', title: 'Hediyelik Ürünler', text: 'Çikolata Oyuncak Dekarasyon', price: '$345/10gm' ,url:'hediyelik'},
   ];
   // condos post
   condosposts = [
-    { img: '../../../../assets/img/aaımg/düğün_370x370.jpg', title: 'Yeni Düğün Organizasyonları', text: 'Düğün, Kına, Nişan, Evlenme Teklifi ve Özel Organizasyonlar', price: '',url:'organizasyonDüğün' },
-    { img: '../../../../assets/img/aaımg/parti_370x370.jpg', title: 'Açık ve Kapalı Parti', text: 'Doğum Günü, Açılış, Brick Tobe, ve Özel Organizasyonlar', price: '' ,url:'classification'},
-    { img: '../../../../assets/img/aaımg/Uvbaskı_370x370.jpg', title: 'Ahşap Ve Metal Uv Baskıt', text: 'Kapı Girşi, Kapı Üstü, Bahçe Salon,ve Özel Tasarımlar', price: '' ,url:'lazerkesim'},
-    { img: '../../../../assets/img/aaımg/hediye_370x370.jpg', title: 'Binlerce Hediyelik Ürün', text: 'Eşsiz Hediyelik Eşya Ve Ürünlerimize Gözatın', price: '',url:'hediyelik' },
+    { img: '../../../../assets/img/aaimg/dugun_370x370.jpg', title: 'Yeni Düğün Organizasyonları', text: 'Düğün, Kına, Nişan, Evlenme Teklifi ve Özel Organizasyonlar', price: '',url:'organizasyonDüğün' },
+    { img: '../../../../assets/img/aaimg/parti_370x370.jpg', title: 'Açık ve Kapalı Parti', text: 'Doğum Günü, Açılış, Brick Tobe, ve Özel Organizasyonlar', price: '' ,url:'classification'},
+    { img: '../../../../assets/img/aaimg/Uvbaski_370x370.jpg', title: 'Ahşap Ve Metal Uv Baskıt', text: 'Kapı Girşi, Kapı Üstü, Bahçe Salon,ve Özel Tasarımlar', price: '' ,url:'lazerkesim'},
+    { img: '../../../../assets/img/aaimg/hediye_370x370.jpg', title: 'Binlerce Hediyelik Ürün', text: 'Eşsiz Hediyelik Eşya Ve Ürünlerimize Gözatın', price: '',url:'hediyelik' },
   ];
   // Cta 
   ctabg = 'http://metropolitanhost.com/themes/themeforest/html/laramiss/assets/img/others/product.png';
@@ -151,87 +151,87 @@ export class HomeComponent implements AfterViewInit {
     },
     ],
   };
-  // shopposts = [
-  //   { img: '../../../../assets/img/aaımg/nişanşekerliği_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Nişan Şekerliği', price1: '$390', price2: '$480' },
-  //   { img: '../../../../assets/img/aaımg/nişanşekerliği2_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Çikolata Tepsisi', price1: '$390', price2: '$480' },
-  //   { img: '../../../../assets/img/aaımg/nişantepsi_245x331.jpg', tag1: 'Sale', tag2: '-10%', title: 'Nişan Tepsi Takımı', price1: '$450', price2: '$510' },
-  //   { img: '../../../../assets/img/aaımg/nişşanisimlik_245x331.jpg', tag1: 'New', title: 'Nadir Dekoratifler', price1: '$290' },
-  //   { img: '../../../../assets/img/aaımg/parfüm_245x331.jpg', tag1: 'Sale', tag2: '-25%', title: 'Parti Parfümleri', price1: '$500', price2: '$580' },
-  //   { img: '../../../../assets/img/aaımg/damatfincanı_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Damat Kahve Fincanı', price1: '$390', price2: '$480' },
-  //   { img: '../../../../assets/img/aaımg/En6_245x331.jpg', tag1: 'New', title: 'Nedime Elbisesi', price1: '$290' },
-  //   { img: '../../../../assets/img/aaımg/En7_245x331.jpg', tag1: 'Sale', tag2: '-10%', title: 'Gelin Damat Kokusu', price1: '$450', price2: '$510' },
-  //   { img: '../../../../assets/img/aaımg/En8_245x331.jpg', tag1: 'Sale', tag2: '-25%', title: 'Masa İsimlik', price1: '$500', price2: '$580' },
-  // ];
+  shopposts = [
+    { img: '../../../../assets/img/aaimg/nisansekerligi_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Nişan Şekerliği', price1: '$390', price2: '$480',url: 'organizasyonNisan' },
+    { img: '../../../../assets/img/aaimg/nisansekerligi2_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Çikolata Tepsisi', price1: '$390', price2: '$480',url: 'organizasyonNisan' },
+    { img: '../../../../assets/img/aaimg/nisantepsi_245x331.jpg', tag1: 'Sale', tag2: '-10%', title: 'Nişan Tepsi Takımı', price1: '$450', price2: '$510',url: 'organizasyonNisan' },
+    { img: '../../../../assets/img/aaimg/nissanisimlik_245x331.jpg', tag1: 'New', title: 'Nadir Dekoratifler', price1: '$290',url: 'organizasyonNisan' },
+    { img: '../../../../assets/img/aaimg/parfum_245x331.jpg', tag1: 'Sale', tag2: '-25%', title: 'Parti Parfümleri', price1: '$500', price2: '$580',url: 'shop-left' },
+    { img: '../../../../assets/img/aaimg/damatfincani_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Damat Kahve Fincanı', price1: '$390', price2: '$480',url: 'shop-left' },
+    { img: '../../../../assets/img/aaimg/En6_245x331.jpg', tag1: 'New', title: 'Nedime Elbisesi', price1: '$290' ,url: 'organizasyonKına'},
+    { img: '../../../../assets/img/aaimg/En7_245x331.jpg', tag1: 'Sale', tag2: '-10%', title: 'Gelin Damat Kokusu', price1: '$450', price2: '$510',url: 'shop-left' },
+    { img: '../../../../assets/img/aaimg/En8_245x331.jpg', tag1: 'Sale', tag2: '-25%', title: 'Masa İsimlik', price1: '$500', price2: '$580',url: 'shop-left' },
+  ];
   texture = 'assets/img/texture-1.png';
   // Tabs
   // Kına
   earingposts = [
-    { img: '../../../../assets/img/aaımg/kınna_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Kına Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/kın1_245x331.jpg', tag1: 'New', title: 'Kına Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/kınna11_245x331.jpg', tag1: 'New', tag2: '-10%', title: 'Kına Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/kınna2_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Kına Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/kinna_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Kına Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/kin1_245x331.jpg', tag1: 'New', title: 'Kına Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/kinna11_245x331.jpg', tag1: 'New', tag2: '-10%', title: 'Kına Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/kinna2_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Kına Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
   ];
   // düğün
   ringsposts = [
-    { img: '../../../../assets/img/aaımg/düğğün_245x331.jpg', tag2: '-10%', title: 'Düğün Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/düğğün1_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Düğün Organizasyonu ', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/düğğün2_245x331.jpg', tag1: 'Sale', tag2: '-40%', title: 'Düğün Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/düğğün3_245x331.jpg', tag2: '-10%', title: 'Düğün Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/duggunn_245x331.jpg', tag2: '-10%', title: 'Düğün Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/duggun1_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Düğün Organizasyonu ', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/duggun2_245x331.jpg', tag1: 'Sale', tag2: '-40%', title: 'Düğün Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/duggun3_245x331.jpg', tag2: '-10%', title: 'Düğün Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
   ];
   // evlilik teklifi
   necklessposts = [
-    { img: '../../../../assets/img/aaımg/evvlilik_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Evlilik Teklifi', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/evvlilik1_245x331.jpg', tag1: 'New', title: 'Evlilik Teklifi', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/Kat2_245x331.jpg', tag1: 'New', tag2: '-10%', title: 'Evlilik Teklifi', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/evvlilik2_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Evlilik Teklifi', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/evvlilik_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Evlilik Teklifi', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/evvlilik1_245x331.jpg', tag1: 'New', title: 'Evlilik Teklifi', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/Kat2_245x331.jpg', tag1: 'New', tag2: '-10%', title: 'Evlilik Teklifi', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/evvlilik2_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Evlilik Teklifi', price1: 'Paket ve İsteğe Özel', price2: '' },
   ];
   // nişan
   braceletposts = [
-    { img: '../../../../assets/img/aaımg/nişşan_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Nişan Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/nişşan1_245x331.jpg', tag1: 'New', title: 'Nişan Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/nişşan2_245x331.jpg', tag1: 'New', tag2: '-10%', title: 'Nişan Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/nişşan3_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Nişan Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/nissan_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Nişan Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/nissan1_245x331.jpg', tag1: 'New', title: 'Nişan Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/nissan2_245x331.jpg', tag1: 'New', tag2: '-10%', title: 'Nişan Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/nissan3_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Nişan Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
   ];
   // açılış
   armletsposts = [
-    { img: '../../../../assets/img/aaımg/organizasyon2_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Açılış Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/aççılış_245x331.jpg', tag1: 'New', title: 'Açılış Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/aççılış1_245x331.jpg', tag1: 'New', tag2: '-10%', title: 'Açılış Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/aççııllış_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Açılış Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/organizasyon2_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Açılış Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/accilis_245x331.jpg', tag1: 'New', title: 'Açılış Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/accilis1_245x331.jpg', tag1: 'New', tag2: '-10%', title: 'Açılış Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/accilis2_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Açılış Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
   ];
   // sünnet
   ankletsposts = [
-    { img: '../../../../assets/img/aaımg/sünnnet_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Sünnet Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/sünnnet1_245x331.jpg', tag1: 'New', title: 'Sünnet Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/sünnnet2_245x331.jpg', tag1: 'New', tag2: '-10%', title: 'Sünnet Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
-    { img: '../../../../assets/img/aaımg/sünnn_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Sünnet Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/sünnnet_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Sünnet Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/sünnnet1_245x331.jpg', tag1: 'New', title: 'Sünnet Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/sünnnet2_245x331.jpg', tag1: 'New', tag2: '-10%', title: 'Sünnet Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
+    { img: '../../../../assets/img/aaimg/sünnn_245x331.jpg', tag1: 'Sale', tag2: '-15%', title: 'Sünnet Organizasyonu', price1: 'Paket ve İsteğe Özel', price2: '' },
   ];
   // Service post
   serviceposts = [
-    { img: '../../../../assets/img/aaımg/nişşanissimlik1_600x360.jpg', icon: 'flaticon-earrings', title: 'Nişan İsimliği', text: 'İhtiyacınız Olan Söz & Nişan Ürünleri nişan isimlik modelleri, nişan isimlik özellikleri ve tüm dekoratifleri.' },
-    { img: '../../../../assets/img/aaımg/4a06e6bfc6efb85eabe8e0471aa80619_600x360.jpg', icon: 'flaticon-bracelet', title: 'Nişan Çikolatası', text: 'Kız isteme çikolatası, Kuru çiçekli, Cam kutulu, İsteme çikolatası Kararmaz Gümüş Kapaklı, Söz, Nişan Çikolata Gondolu' },
-    { img: '../../../../assets/img/aaımg/masaisimliği_600x360.jpg', icon: 'flaticon-earrings', title: 'Masa İsimliği', text: 'İhtiyacınız Olan Söz & Nişan Ürünleri davet masa isimlik modelleri, nişan isimlik özellikleri ve tüm dekoratifleri.' },
+    { img: '../../../../assets/img/aaimg/nissanisimlik1_600x360.jpg', icon: 'flaticon-earrings', title: 'Nişan İsimliği', text: 'İhtiyacınız Olan Söz & Nişan Ürünleri nişan isimlik modelleri, nişan isimlik özellikleri ve tüm dekoratifleri.' },
+    { img: '../../../../assets/img/aaimg/4a06e6bfc6efb85eabe8e0471aa80619_600x360.jpg', icon: 'flaticon-bracelet', title: 'Nişan Çikolatası', text: 'Kız isteme çikolatası, Kuru çiçekli, Cam kutulu, İsteme çikolatası Kararmaz Gümüş Kapaklı, Söz, Nişan Çikolata Gondolu' },
+    { img: '../../../../assets/img/aaimg/masaisimligi_600x360.jpg', icon: 'flaticon-earrings', title: 'Masa İsimliği', text: 'İhtiyacınız Olan Söz & Nişan Ürünleri davet masa isimlik modelleri, nişan isimlik özellikleri ve tüm dekoratifleri.' },
   ];
   // Lastestpost indirimdeki ürünler
   latestposts = [
-    { img: '../../../../assets/img/aaımg/canlımüzi_245x331.jpg', title: 'Canlı Müzik ve Konser', price: '' },
-    { img: '../../../../assets/img/aaımg/ddj_245x331.jpg', title: 'Dj ve Ses Sistemleri', price: '' },
-    { img: '../../../../assets/img/aaımg/kın1_245x331.jpg', title: 'Kına Müzik ve Eğlence', price: '' },
-    { img: '../../../../assets/img/aaımg/semazen_245x331.jpg', title: 'İlahi ve Semazen Grubu', price: '' },
+    { img: '../../../../assets/img/aaimg/canlimüzik_245x331.jpg', title: 'Canlı Müzik ve Konser', price: '' },
+    { img: '../../../../assets/img/aaimg/ddj_245x331.jpg', title: 'Dj ve Ses Sistemleri', price: '' },
+    { img: '../../../../assets/img/aaimg/kin1_245x331.jpg', title: 'Kına Müzik ve Eğlence', price: '' },
+    { img: '../../../../assets/img/aaimg/semazen_245x331.jpg', title: 'İlahi ve Semazen Grubu', price: '' },
   ];
   // Counter
   counterposts = [
-    { icon: 'flaticon-bracelet-1', number: '84', prefix: 'k', title: 'Jewelriess in Album' },
-    { icon: 'flaticon-like', number: '10', prefix: 'M', title: 'Happy Feedbacks' },
-    { icon: 'flaticon-earrings', number: '02', prefix: 'k', title: 'Categories Served' },
-    { icon: 'flaticon-user-1', number: '100', prefix: 'M', title: 'Happy Clients' },
+    { icon: 'flaticon-bracelet-2', number: '84', prefix: 'k', title: 'Albümdeki Etkinlikler' },
+    { icon: 'flaticon-like', number: '10', prefix: 'M', title: 'Mutlu Geri Bildirimler' },
+    { icon: 'flaticon-bracelet-2', number: '02', prefix: 'k', title: 'Hizmet verilen kategoriler' },
+    { icon: 'flaticon-user-1', number: '100', prefix: 'M', title: 'Mutlu Müşteriler' },
   ];
   // Masonary image
   msimg1 = 'assets/img/room-type/03.jpg';
   msimg2 = 'assets/img/room-type/01.jpg';
   msimg3 = 'assets/img/room-type/02.jpg';
   // Video poster
-  videoimg = '../../../../assets/img/aaımg/video_570x460.jpg';
+  videoimg = '../../../../assets/img/aaimg/video_570x460.jpg';
  
   // Blog post
   latestpostsliderConfig = {
@@ -260,12 +260,12 @@ export class HomeComponent implements AfterViewInit {
     ],
   };
   blogposts = [
-    { img: '../../../../assets/img/aaımg/hab.jpg', title: 'Mutlu ve En Özel Gününüzde Sizlerleyiz.', postdate: '', linktext: 'Read More' },
-    { img: '../../../../assets/img/aaımg/hab4_360x470.jpg', title: 'Mutlu ve En Özel Gününüzde Sizlerleyiz', postdate: ' ', linktext: 'Read More' },
-    { img: '../../../../assets/img/aaımg/hab1.jpg', title: 'Mutlu ve En Özel Gününüzde Sizlerleyiz.', postdate: ' ', linktext: 'Read More' },
-    { img: '../../../../assets/img/aaımg/nhab1_360x470.jpg', title: 'Mutlu ve En Özel Gününüzde Sizlerleyiz.', postdate: '', linktext: 'Read More' },
+    { img: '../../../../assets/img/aaimg/hab.jpg', title: 'Mutlu ve En Özel Gününüzde Sizlerleyiz.', postdate: '', linktext: 'Daha Fazlasını Gör' },
+    { img: '../../../../assets/img/aaimg/hab4_360x470.jpg', title: 'Mutlu ve En Özel Gününüzde Sizlerleyiz', postdate: ' ', linktext: 'Daha Fazlasını Gör' },
+    { img: '../../../../assets/img/aaimg/hab1.jpg', title: 'Mutlu ve En Özel Gününüzde Sizlerleyiz.', postdate: ' ', linktext: 'Daha Fazlasını Gör' },
+    { img: '../../../../assets/img/aaimg/nhab1_360x470.jpg', title: 'Mutlu ve En Özel Gününüzde Sizlerleyiz.', postdate: '', linktext: 'Daha Fazlasını Gör' },
     
-    { img: '../../../../assets/img/aaımg/nhab.jpg', title: 'Mutlu ve En Özel Gününüzde Sizlerleyiz.', postdate: '', linktext: 'Read More' },
+    { img: '../../../../assets/img/aaimg/nhab.jpg', title: 'Mutlu ve En Özel Gününüzde Sizlerleyiz.', postdate: '', linktext: 'Daha Fazlasını Gör' },
 
   ];
   ngAfterViewInit() {

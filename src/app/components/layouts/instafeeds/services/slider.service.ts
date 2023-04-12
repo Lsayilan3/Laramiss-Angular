@@ -2,6 +2,7 @@ import { Slider } from './../models/slider';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,7 @@ constructor(private httpClient: HttpClient) { }
 
 getSliderList(): Observable<Slider[]> {
 
-  let newPath = this.apiUrl + "sliders/getall"
+  let newPath = (environment.getApiUrl +"/sliders/getall")
   return this.httpClient.get<Slider[]>(newPath)
 }
 

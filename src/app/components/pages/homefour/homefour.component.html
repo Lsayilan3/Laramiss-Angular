@@ -74,14 +74,14 @@
             <div class="col-lg-4 col-md-6" *ngFor="let locationpost of locationposts">
                 <div class="location-wrapper">
                     <div class="location-thumb">
-                        <a href="#">
+                        <a routerLink="/#">
                             <img src="{{locationpost.img}}" alt="img">
                         </a>
                         <div class="location-content">
                             <div class="icon"> <i class="flaticon-location-pin"></i>
                             </div>
                             <h4>
-                                <a href="#">{{locationpost.title}} </a>
+                                <a routerLink="/#">{{locationpost.title}} </a>
                             </h4>
                             <span>{{locationpost.text}}</span>
                         </div>
@@ -139,7 +139,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-10 order-1 order-lg-2 wow fadeInRight" data-wow-delay=".3s">
-                <div class="video-wrap video-wrap-two mb-small" style="background-image: url({{Videobg}});"> <a href="http://www.youtube.com/embed/watch?v=EEJFMdfraVY" class="popup-video"><i class="fas fa-play"></i></a>
+                <div class="video-wrap video-wrap-two mb-small" style="background-image: url({{Videobg}});"> <a routerLink="/http://www.youtube.com/embed/watch?v=EEJFMdfraVY" class="popup-video"><i class="fas fa-play"></i></a>
                 </div>
             </div>
         </div>

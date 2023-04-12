@@ -2,6 +2,7 @@ import { Yiyecek } from './../models/yiyecek';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,7 @@ export class YiyecekService {
 
   getYiyecekList(): Observable<Yiyecek[]> {
   
-    let newPath = this.apiUrl + "yiyeceks/getall"
+    let newPath = (environment.getApiUrl + "/yiyeceks/getall")
     return this.httpClient.get<Yiyecek[]>(newPath)
   }
 

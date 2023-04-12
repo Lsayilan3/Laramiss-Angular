@@ -2,6 +2,7 @@ import { Ensatan } from './../models/ensatan';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,7 @@ export class EnsatanService {
 
   getEnsatanList(): Observable<Ensatan[]> {
   
-    let newPath = this.apiUrl + "ensatans/getall"
+    let newPath = (environment.getApiUrl + "/ensatans/getall")
     return this.httpClient.get<Ensatan[]>(newPath)
   }
 

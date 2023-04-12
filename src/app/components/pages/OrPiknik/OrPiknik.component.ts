@@ -12,7 +12,7 @@ export class OrPiknikComponent implements OnInit {
 
   orPikniks : OrPiknik [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private  piknikService  :PiknikService ) { }
 

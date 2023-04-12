@@ -8,7 +8,7 @@
         <h5 class="widget-title">Kategoriler</h5>
         <ul>
             <li *ngFor="let category of categories">
-                <a href="hediyelik">{{category.title}}<span *ngIf="category.numberofpost">{{category.numberofpost}}</span></a>
+                <a routerLink="/hediyelik">{{category.title}}<span *ngIf="category.numberofpost">{{category.numberofpost}}</span></a>
             </li>
         </ul>
     </div> -->
@@ -46,8 +46,8 @@
                 </div>
                 <div class="feed-desc desc">
                     <div class="cart-flex">
-                        <h6><a href="#">{{cartproduct.title}}</a></h6>
-                        <a href="#" class="remove"><i class="fal fa-times"></i></a>
+                        <h6><a routerLink="/#">{{cartproduct.title}}</a></h6>
+                        <a routerLink="/#" class="remove"><i class="fal fa-times"></i></a>
                     </div>
                     <span class="price">${{cartproduct.price}} <span>${{cartproduct.discountprice}}</span></span>
                 </div>
@@ -89,7 +89,7 @@
 
         <h5 class="widget-title">Popular Tags</h5>
         <ul>
-            <li *ngFor="let tag of tags"><a href="#">{{tag.title}}</a></li>
+            <li *ngFor="let tag of tags"><a routerLink="/#">{{tag.title}}</a></li>
         </ul>
     </div>
 </div> -->

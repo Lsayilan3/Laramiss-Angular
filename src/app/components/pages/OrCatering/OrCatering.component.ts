@@ -13,7 +13,7 @@ export class OrCateringComponent implements OnInit {
   
   orCaterings : OrCatering [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private cateringService : CateringService) { }
 

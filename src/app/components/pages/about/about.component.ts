@@ -14,7 +14,7 @@ export class AboutComponent implements AfterViewInit {
     this.wowService.init();
   }
   // Video bg
-  videobg = '../../../../assets/img/aaımg/arka2.jpg';
+  videobg = '../../../../assets/img/aaimg/arka2.jpg';
   // Features
   featuresposts = [
     {icon:'flaticon-bracelet',title:'Müşteri Anlayışı',animationtime:'.3s'},
@@ -24,16 +24,16 @@ export class AboutComponent implements AfterViewInit {
     {icon:'flaticon-earrings',title:'Memnuniyet',animationtime:'.7s'},
   ];
   // ABout img
-  aboutimg = '../../../../assets/img/aaımg/2017-07-31@10-02-03-715_kına 2.jpg';
+  aboutimg = '../../../../assets/img/aaimg/aboutkina2.jpg';
   // COunter
   counterposts = [
-    {icon:'flaticon-user-1',number:'8000',title:'Happy Users'},
-    {icon:'flaticon-like',number:'10',prefix:'M',title:'Reviews & Appriciate'},
-    {icon:'flaticon-suitcase',number:'100',title:'Country Coverage'},
+    {icon:'flaticon-user-1',number:'8000',title:'Mutlu Müşteriler'},
+    {icon:'flaticon-like',number:'10',prefix:'M',title:'Yorumlar ve Takdir'},
+    {icon:'flaticon-suitcase',number:'100',title:'Ülke Kapsamı'},
   ];
   // Galklery
-  gallimg1 = '../../../../assets/img/aaımg/contact_bg_570x400.jpg';
-  gallimg2 = '../../../../assets/img/aaımg/author_bg_570x400.jpg';
+  gallimg1 = '../../../../assets/img/aaimg/contact_bg_570x400.jpg';
+  gallimg2 = '../../../../assets/img/aaimg/author_bg_570x400.jpg';
   // Blog 
   latestpostConfig = {
     "slidesToShow": 3,

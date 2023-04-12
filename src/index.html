@@ -6,6 +6,8 @@
     <title>Kapadokya Davet Organizasyon</title>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kapadokya Davet ve Organizasyon, Nevşehir'de hizmet veren bir organizasyon firmasıdır. Kapadokya bölgesinde düzenlenen düğün, nişan, kına gecesi, kurumsal etkinlikler ve özel günler için profesyonel organizasyon hizmetleri sunarız. Eşsiz Kapadokya manzarası eşliğinde hayallerinizdeki etkinliği gerçeğe dönüştürmek için bize başvurun.">
+    <meta property="og:image" content="../src/assets/img/aaimg/oz1_550x580.jpg">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
@@ -20,49 +22,54 @@
     .wayra-coc-floating-style2 {
     width: 60px;
     height: 60px;
-    bottom: 20px;
     background-color: #25D366;
-    border-radius: 50px;
+    border-radius: 30px;
     box-shadow: 0 8px 25px -5px rgb(45 62 79 / 30%);
     }
     .wayra-coc-floating-button {
     position: fixed;
     bottom: 20px;
-    z-index: 9999;
+    z-index: 2;
     text-decoration: none;
     left:  20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s;
     }
-    svg:not(:root) {
-    overflow: hidden;
-}
-.wayra-coc-floating-label {
-    right: 85px;
-    position: fixed;
-    display: table;
-    visibility: hidden;
-    z-index: 9999;
-    text-align: center;
 
-    transition: all 0.2s;
+
+
+
+#cc:hover::before {
+  content: "Bir sorunuzmu var? Bize yazın";
+  width: 220px;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#cc:hover::before,
+#cc:hover::after {
+  opacity: 1;
 }
 
 
 </style>
 
 <body>
-    <a
+    <a id="cc"
      href="https://web.whatsapp.com/send?phone=905324530435&amp;text=merhaba.." 
-     rel="noreferrer" title="Sorunuz mu var? Bize Yazın" alt="Sorunuz mu var? Bize Yazın" 
      target="_blank" class="wayra-coc-floating-button wayra-coc-floating-style2  wayra-coc-floating"> 
-     <i style="font-size: 35px; color: white; overflow: hidden; " class="fa-brands fa-whatsapp"></i>
-        <div  class="wayra-coc-floating-label">  
-    <div  style="color: white;" class="wayra-coc-floating-label-text">Sorunuz mu var? Bize Yazın</div>    </div>    </a>
+     <i style="font-size: 38px; color: white; overflow: hidden; " class="fa-brands fa-whatsapp"></i>
+           </a>
     <app-root></app-root>
 </body>
 

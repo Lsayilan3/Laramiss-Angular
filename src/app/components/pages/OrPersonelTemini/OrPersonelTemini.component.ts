@@ -12,7 +12,7 @@ export class OrPersonelTeminiComponent implements OnInit {
 
   orPersonelTeminis : OrPersonelTemini [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private  personelTeminiService  :PersonelTeminiService ) { }
 

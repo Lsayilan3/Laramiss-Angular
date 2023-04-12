@@ -12,7 +12,7 @@ export class YiyecekicecekComponent implements OnInit {
 
   yiyeceks: Yiyecek [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private yiyecekservice : YiyecekService) { }
 

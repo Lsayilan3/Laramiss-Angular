@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class BlogdetailComponent implements OnInit {
 
   constructor() { }
-  blogimg = '../../../../assets/img/aaımg/çiç.jpg';
-  blogauthor = '../../../../assets/img/aaımg/mis3_255x276.jpg';
+  blogimg = '../../../../assets/img/aaimg/cic.jpg';
+  blogauthor = '../../../../assets/img/aaimg/mis3_255x276.jpg';
 
   relatedtags = [
     {tag:'Kapadokya'},
@@ -29,11 +29,11 @@ export class BlogdetailComponent implements OnInit {
   blogicon = 'assets/img/blog-details/icon.png';
 
   relatedposts = [
-    {img:'../../../../assets/img/aaımg/det.jpg',title:'Hangi Gelinlikle Hangi Takılar',text:'Düğün asistanımız senin için ücretsiz araştırsın, hayallerini süsleyecek düğün için teklif al.',postdate:'24th March 2020'},
-    {img:'../../../../assets/img/aaımg/det1.jpg',title:'Nişan-Yüzükleri için Pırlanta Olmayan Değerli Taşlar',text:'Mor ametist, Sarı sitrin, Turmalin, Ay taşı, Pembe kuvars ve Peridot ',postdate:'24th March 2020'},
+    {img:'../../../../assets/img/aaimg/det.jpg',title:'Hangi Gelinlikle Hangi Takılar',text:'Düğün asistanımız senin için ücretsiz araştırsın, hayallerini süsleyecek düğün için teklif al.',postdate:'24th March 2023'},
+    {img:'../../../../assets/img/aaimg/det1.jpg',title:'Nişan-Yüzükleri için Pırlanta Olmayan Değerli Taşlar',text:'Mor ametist, Sarı sitrin, Turmalin, Ay taşı, Pembe kuvars ve Peridot ',postdate:'24th March 2023'},
   ];
 
-  authorimg = "../../../../assets/img/aaımg/hizmet-1_180x200.jpg";
+  authorimg = "../../../../assets/img/aaimg/hizmet1_180x200.jpg";
 
   commentuser1 = 'assets/img/blog-details/avatar-1.jpg';
   commentuser2 = 'assets/img/blog-details/avatar-2.jpg';

@@ -2,6 +2,7 @@ import { OrSirketEglence } from './../models/orsirketeglence';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,7 @@ export class SirketEglenceService {
 
   getOrSirketEglenceList(): Observable<OrSirketEglence[]> {
   
-    let newPath = this.apiUrl + "orSirketEglences/getall"
+    let newPath = (environment.getApiUrl + "/orSirketEglences/getall")
     return this.httpClient.get<OrSirketEglence[]>(newPath)
   }
 

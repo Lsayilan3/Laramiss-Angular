@@ -2,6 +2,7 @@ import { OrSunnet } from './../models/orsunnet';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,7 @@ export class SunnetService {
 
   getOrSunnetList(): Observable<OrSunnet[]> {
   
-    let newPath = this.apiUrl + "orSunnets/getall"
+    let newPath = (environment.getApiUrl + "/orSunnets/getall")
     return this.httpClient.get<OrSunnet[]>(newPath)
   }
 

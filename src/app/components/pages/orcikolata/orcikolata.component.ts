@@ -12,7 +12,7 @@ export class OrcikolataComponent implements OnInit {
 
   cikolatas:Cikolata[] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private  cikolataService : cikolataService) { }
 

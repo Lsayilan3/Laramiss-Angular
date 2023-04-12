@@ -12,7 +12,7 @@ export class MüzikComponent implements OnInit {
 
   muziks : Muzik []=[];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private muzikservice : MuzikService) { }
   

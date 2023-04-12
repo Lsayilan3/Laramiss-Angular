@@ -2,6 +2,7 @@ import { Blog } from './../models/blog';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,7 @@ constructor(private httpClient: HttpClient) { }
 
 getBlogList(): Observable<Blog[]> {
 
-  let newPath = this.apiUrl + "blogs/getall"
+  let newPath = (environment.getApiUrl  + "/blogs/getall")
   return this.httpClient.get<Blog[]>(newPath)
 }
 

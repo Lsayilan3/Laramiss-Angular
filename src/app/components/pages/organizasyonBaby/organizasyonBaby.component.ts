@@ -12,7 +12,7 @@ export class OrganizasyonBabyComponent implements OnInit {
 
   orBabies : OrBaby [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private babyService : BabyService ) { }
 

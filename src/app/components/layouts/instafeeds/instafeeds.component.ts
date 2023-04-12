@@ -2,6 +2,8 @@ import { environment } from './../../../../environments/environment';
 import { Slider } from './models/slider';
 import { SliderService } from './services/slider.service';
 import { Component, OnInit } from '@angular/core';
+import $ from 'jquery';
+import 'magnific-popup';
 
 @Component({
   selector: 'app-instafeeds',
@@ -12,7 +14,7 @@ export class InstafeedsComponent implements OnInit {
 
   sliders : Slider[]=[];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor( private sliderservice : SliderService) { }
 
@@ -59,9 +61,13 @@ export class InstafeedsComponent implements OnInit {
   //   { img: 'assets/img/instagram/05.jpg' },
   //   { img: 'assets/img/instagram/06.jpg' },
   // ];
+
   ngOnInit(): void {
+    
+    $(document).ready(function() {
+      ($('.popup-image') as any).magnificPopup({type:'image', enabled: true, mainClass: 'mfp-fade'});
+    });
     this.getSlider()
-  
   }
 
   getSlider() {

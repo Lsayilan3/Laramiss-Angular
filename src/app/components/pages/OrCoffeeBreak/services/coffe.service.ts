@@ -2,6 +2,7 @@ import { OrCoffe } from './../models/orcoffe';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,7 @@ export class CoffeService {
 
   getOrCoffeList(): Observable<OrCoffe[]> {
   
-    let newPath = this.apiUrl + "orCofves/getall"
+    let newPath = (environment.getApiUrl +"/orCofves/getall")
     return this.httpClient.get<OrCoffe[]>(newPath)
   }
 }

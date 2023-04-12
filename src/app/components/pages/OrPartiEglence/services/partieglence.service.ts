@@ -2,6 +2,7 @@ import { OrPartiEglence } from './../models/orpartieglence';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,7 @@ export class PartieglenceService {
 
   getOrPartiEglenceList(): Observable<OrPartiEglence[]> {
   
-    let newPath = this.apiUrl + "orPartiEglences/getall"
+    let newPath = (environment.getApiUrl +"/orPartiEglences/getall")
     return this.httpClient.get<OrPartiEglence[]>(newPath)
   }
 

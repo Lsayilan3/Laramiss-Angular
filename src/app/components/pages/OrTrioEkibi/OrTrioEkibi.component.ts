@@ -12,7 +12,7 @@ export class OrTrioEkibiComponent implements OnInit {
 
   orTrioEkibis : OrTrioEkibi [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private  trioEkibiService  :TrioEkibiService ) { }
 

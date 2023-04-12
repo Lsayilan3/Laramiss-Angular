@@ -13,7 +13,7 @@ export class OrganizasyonKınaComponent implements OnInit {
   
   orKinaas : OrKinaa [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private  kinaaService : KinaaService ) { }
 

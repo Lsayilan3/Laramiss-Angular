@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class OrSirketEglenceComponent implements OnInit {
 
   orSirketEglences : OrSirketEglence [] = [];
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private  sirketEglenceService  :SirketEglenceService ) { }
 

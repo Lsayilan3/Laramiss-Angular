@@ -2,6 +2,7 @@ import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Spot } from '../models/spot';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -15,18 +16,18 @@ export class SpotService {
 
   getSpotListt(): Observable<Spot[]> {
   
-    let newPath = this.apiUrl + "spots/getall"
+    let newPath = (environment.getApiUrl + "/spots/getall")
     return this.httpClient.get<Spot[]>(newPath)
 
 }
 
 getSpotList(categoryId): Observable<Spot[]> {
-  let newPath = this.apiUrl + "spots/getlist?categoryId=" +categoryId
+  let newPath = (environment.getApiUrl + "/spots/getlist?categoryId=" +categoryId)
   return this.httpClient.get<Spot[]>(newPath)
 }
 
 getSpotCategoryById(spotId: any):Observable<Spot>{
-let newPath = this.apiUrl + "spots/getbyid/?spotId=" +spotId
+let newPath = (environment.getApiUrl + "/spots/getbyid/?spotId=" +spotId)
 return this.httpClient.get<Spot>(newPath)
 }
 

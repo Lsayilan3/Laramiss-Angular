@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  getApiUrl: "https://localhost:44375/WebAPI",
+  getApiUrl: "https://api.kapadokyadavet.com/api",
+  getApiUrlPhoto: "https://api.kapadokyadavet.com",
 };
 
 /*

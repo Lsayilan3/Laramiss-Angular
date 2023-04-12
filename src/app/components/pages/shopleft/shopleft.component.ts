@@ -20,7 +20,7 @@ export class ShopleftComponent implements OnInit {
 
   category : Category 
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
   constructor(private spotService : SpotService, private categoryService :CategoryService , private activatedRoute: ActivatedRoute) { }
    // Shop grid
    

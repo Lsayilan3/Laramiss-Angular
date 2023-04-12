@@ -20,7 +20,7 @@
                         <tbody>
                             <tr *ngFor="let wishlistpost of wishlistposts">
                                 <td class="product-remove text-center cw-align">
-                                    <a href="#"><i class="fas fa-times"></i></a>
+                                    <a routerLink="/#"><i class="fas fa-times"></i></a>
                                 </td>
                                 <td data-title="Product" class="has-title">
                                     <div class="product-thumbnail">
@@ -39,7 +39,7 @@
                                     <span class="product-currency"><b>$</b></span> <span class="product-amount"><b>{{wishlistpost.total}}</b></span>
                                 </td>
                                 <td data-title="Actions" class="has-title">
-                                    <a href="#" class="main-btn btn-filled">Add to Cart</a>
+                                    <a routerLink="/#" class="main-btn btn-filled">Add to Cart</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -48,10 +48,10 @@
                 <div class="share-wishlist text-center">
                     <h4>Share Your Wishlist</h4>
                     <div class="social-media">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-behance"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a routerLink="/#"><i class="fab fa-facebook-f"></i></a>
+                        <a routerLink="/#"><i class="fab fa-twitter"></i></a>
+                        <a routerLink="/#"><i class="fab fa-behance"></i></a>
+                        <a routerLink="/#"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>

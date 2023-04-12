@@ -50,18 +50,18 @@ export class ClassificationComponent implements OnInit {
   ];
   // Tresnding products
   trendingleftposts = [
-    { img: '../../../../assets/img/aaımg/q_120x120.jpg', title: 'Sevgililer Günü', text: 'Organizasyon fiyatları için detaylı bilgiler alıp hazırlıklarınıza başlayabilirsiniz.', animationtime: '.3s' },
-    { img: '../../../../assets/img/aaımg/q1_120x120.jpg', title: 'Doğum Günü', text: 'Belki de diğer tüm kutlama ve partilere kıyasla çok daha anlamı yüksek etkinliklerdendir..', animationtime: '.4s' },
-    { img: '../../../../assets/img/aaımg/q2_120x120.jpg', title: 'Evlilik Teklifi', text: 'O unutulmaz günü en özel hale getirmek için teklif fırsatlarımızı inceleyin..', animationtime: '.5s' },
-    { img: '../../../../assets/img/aaımg/q3jgp_120x120.jpg', title: 'Evlilik Yıl Dönümü', text: 'Eşler arasındaki en özel organizasyonlardan bir tanesi olarak görünmektedir.', animationtime: '.6s' },
-    { img: '../../../../assets/img/aaımg/q5_120x120.jpg', title: 'Karnı Burnunda Partisi', text: 'İşte karnı burnunda partisi yani Baby Shower hakkında bilmeniz gerekenler.', animationtime: '.7s' },
+    { img: '../../../../assets/img/aaimg/q_120x120.jpg', title: 'Sevgililer Günü', text: 'Organizasyon fiyatları için detaylı bilgiler alıp hazırlıklarınıza başlayabilirsiniz.', animationtime: '.3s' },
+    { img: '../../../../assets/img/aaimg/q1_120x120.jpg', title: 'Doğum Günü', text: 'Belki de diğer tüm kutlama ve partilere kıyasla çok daha anlamı yüksek etkinliklerdendir..', animationtime: '.4s' },
+    { img: '../../../../assets/img/aaimg/q2_120x120.jpg', title: 'Evlilik Teklifi', text: 'O unutulmaz günü en özel hale getirmek için teklif fırsatlarımızı inceleyin..', animationtime: '.5s' },
+    { img: '../../../../assets/img/aaimg/q3jgp_120x120.jpg', title: 'Evlilik Yıl Dönümü', text: 'Eşler arasındaki en özel organizasyonlardan bir tanesi olarak görünmektedir.', animationtime: '.6s' },
+    { img: '../../../../assets/img/aaimg/q5_120x120.jpg', title: 'Karnı Burnunda Partisi', text: 'İşte karnı burnunda partisi yani Baby Shower hakkında bilmeniz gerekenler.', animationtime: '.7s' },
   ];
   trendingrightposts = [
-    { img: '../../../../assets/img/aaımg/q6_120x120.jpg', title: 'Özel Mezuniyet Partisi', text: ' Eğlenceli ve hoş bir mezuniyet töreni için gerekli olan tüm etkenler.', animationtime: '.3s' },
-    { img: '../../../../assets/img/aaımg/q4_120x120.jpg', title: 'Yeni İş Partisi', text: 'Süsleme, kokteyl, balon süsleme, iş ortaklarına, ve potansiyel müşteri kitlesine ilan etme.', animationtime: '.4s' },
-    { img: '../../../../assets/img/aaımg/q7_120x120.jpg', title: 'Bride To Be', text: 'Gelin adaylarının sosyal çevresinin bu konuda en özel şekilde hazırlandıkları bilinmektedir.', animationtime: '.5s' },
-    { img: '../../../../assets/img/aaımg/q8_120x120.jpg', title: 'Hoşgeldin Partisi', text: 'Temalı kişiye özel tasarlanan parti malzemeleri ile okuldan, kamptan, hastaneden eve dönene.', animationtime: '.6s' },
-    { img: '../../../../assets/img/aaımg/q9_120x120.jpg', title: 'Uğurlama Partisi', text: 'İşyeri vedaları da parti mekanlarımızda sıkça rastladığımız parti temaları arasında yerini aldı.', animationtime: '.7s' },
+    { img: '../../../../assets/img/aaimg/q6_120x120.jpg', title: 'Özel Mezuniyet Partisi', text: ' Eğlenceli ve hoş bir mezuniyet töreni için gerekli olan tüm etkenler.', animationtime: '.3s' },
+    { img: '../../../../assets/img/aaimg/q4_120x120.jpg', title: 'Yeni İş Partisi', text: 'Süsleme, kokteyl, balon süsleme, iş ortaklarına, ve potansiyel müşteri kitlesine ilan etme.', animationtime: '.4s' },
+    { img: '../../../../assets/img/aaimg/q7_120x120.jpg', title: 'Bride To Be', text: 'Gelin adaylarının sosyal çevresinin bu konuda en özel şekilde hazırlandıkları bilinmektedir.', animationtime: '.5s' },
+    { img: '../../../../assets/img/aaimg/q8_120x120.jpg', title: 'Hoşgeldin Partisi', text: 'Temalı kişiye özel tasarlanan parti malzemeleri ile okuldan, kamptan, hastaneden eve dönene.', animationtime: '.6s' },
+    { img: '../../../../assets/img/aaimg/q9_120x120.jpg', title: 'Uğurlama Partisi', text: 'İşyeri vedaları da parti mekanlarımızda sıkça rastladığımız parti temaları arasında yerini aldı.', animationtime: '.7s' },
   ];
   ngOnInit(): void {
   }

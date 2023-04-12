@@ -11,7 +11,7 @@ import 'magnific-popup';
 })
 export class HometwoComponent implements OnInit {
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private wowService: NgwWowService) {
     this.wowService.init();
@@ -26,33 +26,33 @@ export class HometwoComponent implements OnInit {
     "arrows": false,
   };
   bannerposts = [
-    { img: 'http://metropolitanhost.com/themes/themeforest/html/laramiss/assets/img/banner/04.jpg', tag: 'Sizi Tanımlayan Tasarımlar', title: "Sizin İçin Mükemmel Tasarımlar ", btn1: 'explore more', btn2: 'Buy Now' },
-    { img: 'http://metropolitanhost.com/themes/themeforest/html/laramiss/assets/img/banner/05.jpg', tag: 'En iyi yaz indirimi burada', title: 'Sizin İçin Yeni Tasarım ', btn1: 'explore more', btn2: 'Buy Now' },
+    { img: 'http://metropolitanhost.com/themes/themeforest/html/laramiss/assets/img/banner/04.jpg', tag: 'Sizi Tanımlayan Tasarımlar', title: "Sizin İçin Mükemmel Tasarımlar ", btn1: 'şimdi keşfet', btn2: 'Satın al' },
+    { img: 'http://metropolitanhost.com/themes/themeforest/html/laramiss/assets/img/banner/05.jpg', tag: 'En iyi yaz indirimi burada', title: 'Sizin İçin Yeni Tasarım ', btn1: 'şimdi keşfet', btn2: 'Satın al' },
   ];
   // condo posts
   condoposts = [
-    { img: '../../../../assets/img/aaımg/düğün_370x370.jpg', icon: 'flaticon-ring', title: 'Yeni Düğün Organizasyonları', text: 'Düğün, Kına, Nişan, Evlenme Teklifi ve Özel Organizasyonlar',no:'+ 0532 453 04 35' },
-    { img: '../../../../assets/img/aaımg/parti_370x370.jpg', icon: 'flaticon-bracelet-2', title: 'Açık ve Kapalı Parti', text: 'Doğum Günü, Açılış, Brick Tobe, ve Özel Organizasyonlar',no:'+ 0532 453 04 35' },
-    { img: '../../../../assets/img/aaımg/Uvbaskı_370x370.jpg', icon: 'flaticon-necklace', title: 'Ahşap Ve Metal Uv Baskı', text: 'Kapı Girşi, Kapı Üstü, Bahçe Salon,ve Özel Tasarımlar ',no:'+ 0532 453 04 35' },
-    { img: '../../../../assets/img/aaımg/hediye_370x370.jpg', icon: 'flaticon-diamond', title: 'Binlerce Hediyelik Ürün', text: 'Hediyelik Eşya  Ve Ürünlerimize Gözatın',no:'+ 0532 453 04 35' },
+    { img: '../../../../assets/img/aaimg/dugun_370x370.jpg', icon: 'flaticon-ring', title: 'Yeni Düğün Organizasyonları', text: 'Düğün, Kına, Nişan, Evlenme Teklifi ve Özel Organizasyonlar',no:'+ 0532 453 04 35' },
+    { img: '../../../../assets/img/aaimg/parti_370x370.jpg', icon: 'flaticon-bracelet-2', title: 'Açık ve Kapalı Parti', text: 'Doğum Günü, Açılış, Brick Tobe, ve Özel Organizasyonlar',no:'+ 0532 453 04 35' },
+    { img: '../../../../assets/img/aaimg/Uvbaski_370x370.jpg', icon: 'flaticon-necklace', title: 'Ahşap Ve Metal Uv Baskı', text: 'Kapı Girşi, Kapı Üstü, Bahçe Salon,ve Özel Tasarımlar ',no:'+ 0532 453 04 35' },
+    { img: '../../../../assets/img/aaimg/hediye_370x370.jpg', icon: 'flaticon-diamond', title: 'Binlerce Hediyelik Ürün', text: 'Hediyelik Eşya  Ve Ürünlerimize Gözatın',no:'+ 0532 453 04 35' },
   ];
   // Category box
-  catimg1 = '../../../../assets/img/aaımg/gümüş_480x480.jpg';
-  catimg2 = '../../../../assets/img/aaımg/gümüş2_480x480.jpg';
-  catimg3 = '../../../../assets/img/aaımg/gümüş3_480x480.jpg';
-  catimg4 = '../../../../assets/img/aaımg/gümüş1_480x480.jpg';
+  catimg1 = '../../../../assets/img/aaimg/gumus_480x480.jpg';
+  catimg2 = '../../../../assets/img/aaimg/gumus2_480x480.jpg';
+  catimg3 = '../../../../assets/img/aaimg/gumus3_480x480.jpg';
+  catimg4 = '../../../../assets/img/aaimg/gumus1_480x480.jpg';
   // Video img
   videobg = 'assets/img/bg/05.jpg';
   videoicon = 'assets/img/icon/07.png';
   // Tabs img
-  tbimg4 = '../../../../assets/img/aaımg/müş.jpg';
-  tbimg1 = '../../../../assets/img/aaımg/müş1_380x280.jpg';
-  tbimg2 = '../../../../assets/img/aaımg/müş2.jpg';
-  tbimg3 = '../../../../assets/img/aaımg/orta1.jpg';
+  tbimg4 = '../../../../assets/img/aaimg/mus.jpg';
+  tbimg1 = '../../../../assets/img/aaimg/müs1_380x280.jpg';
+  tbimg2 = '../../../../assets/img/aaimg/mus2.jpg';
+  tbimg3 = '../../../../assets/img/aaimg/orta1_380x575.jpg';
   // Feature img
-  feaimg1 = '../../../../assets/img/aaımg/açıl_370x350.jpg';
-  feaimg2 = '../../../../assets/img/aaımg/parts.jpg1_370x350.jpg';
-  feaimg3 = '../../../../assets/img/aaımg/iyi2_370x350.jpg';
+  feaimg1 = '../../../../assets/img/aaimg/acil_370x350.jpg';
+  feaimg2 = '../../../../assets/img/aaimg/parts.jpg1_370x350.jpg';
+  feaimg3 = '../../../../assets/img/aaimg/iyi2_370x350.jpg';
   // handpickproducts 
   pickproducts = [
     { icon: 'flaticon-earrings', url:'kokteyl', title: 'Kokteyl Organizasyonu', text: 'Kokteyl organizasyonu fiyatları menü tarzına göre değişmektedir istenilen menülere ekleme ve çıkarımlar yapılarak fiyatlar oluşturulur. Kokteyl organizasyonu detaylı bilgi için iletişim numaralarımızdan bizimle irtibata geçebilirsiniz.' },
@@ -90,11 +90,11 @@ export class HometwoComponent implements OnInit {
     ],
   };
   roomslideroneposts = [
-    { img: '../../../../assets/img/aaımg/öz_550x580.jpg' },
-    { img: '../../../../assets/img/aaımg/öz5_550x580.jpg' },
-    { img: '../../../../assets/img/aaımg/öz1_550x580.jpg' },
-    { img: '../../../../assets/img/aaımg/öz3_550x580.jpg' },
-    { img: '../../../../assets/img/aaımg/öz4_550x580.jpg' },
+    { img: '../../../../assets/img/aaimg/oz_550x580.jpg' },
+    { img: '../../../../assets/img/aaimg/oz5_550x580.jpg' },
+    { img: '../../../../assets/img/aaimg/oz1_550x580.jpg' },
+    { img: '../../../../assets/img/aaimg/oz3_550x580.jpg' },
+    { img: '../../../../assets/img/aaimg/oz4_550x580.jpg' },
   ];
   // Room slider content
   roomslidercontentConfig = {

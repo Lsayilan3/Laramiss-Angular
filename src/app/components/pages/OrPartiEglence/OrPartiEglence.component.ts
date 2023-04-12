@@ -12,7 +12,7 @@ export class OrPartiEglenceComponent implements OnInit {
 
   orPartiEglences : OrPartiEglence [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private  partieglenceService  : PartieglenceService) { }
 

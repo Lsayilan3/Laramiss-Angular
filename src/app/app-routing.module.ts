@@ -68,7 +68,7 @@ const routes: Routes = [
   // {path:'blog-list',component:BlogListComponent, data: { breadcrumb: 'Blog List' }},
   // {path:'cart',component:CartComponent, data: { breadcrumb: 'Cart' }},
   {path:'checkout',component:CheckoutComponent, data: { breadcrumb: 'Checkout' }},
-  {path:'classification',component:ClassificationComponent, data: { breadcrumb: 'Classification' }},
+  {path:'classification',component:ClassificationComponent, data: { breadcrumb: 'Sınıflandırma' }},
   {path:'coming-soon',component:ComingsoonComponent, data: { breadcrumb: 'Coming Soon' }},
   {path:'contact',component:ContactComponent, data: { breadcrumb: 'Contact Us' }},
   {path:'faq',component:FaqComponent, data: { breadcrumb: "FAQ's" }},
@@ -121,8 +121,10 @@ const routes: Routes = [
   
 ];
 
+
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'top' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

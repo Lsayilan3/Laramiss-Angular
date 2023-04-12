@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 // import { ListResponseModel } from '../models/listResponseModel';
 import { Category } from '../models/category';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -17,13 +18,13 @@ export class CategoryService {
 
   getCategoryList(): Observable<Category[]> {
   
-    let newPath = this.apiUrl + "spotCategoryies/getall"
+    let newPath = (environment.getApiUrl + "/spotCategoryies/getall")
     return this.httpClient.get<Category[]>(newPath)
   }
 
 
   getCategoryById(categoryId: any):Observable<Category>{
-    let newPath = this.apiUrl + "spotCategoryies/getbyid/?categoryId=" +categoryId
+    let newPath = (environment.getApiUrl + "/spotCategoryies/getbyid/?categoryId=" +categoryId)
     return this.httpClient.get<Category>(newPath)
   }
 }

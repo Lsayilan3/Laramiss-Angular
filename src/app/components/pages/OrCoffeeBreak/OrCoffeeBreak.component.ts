@@ -13,7 +13,7 @@ export class OrCoffeeBreakComponent implements OnInit {
   
   orCofves : OrCoffe [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private coffeService : CoffeService) { }
 

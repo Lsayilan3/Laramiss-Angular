@@ -8,7 +8,7 @@
                     <ul class="breadcrumb-nav">
                         <li><a routerLink="/">Home</a></li>
                         <li *ngIf="!route.terminal" class="breadcrumb-item">
-                            <a href="" [routerLink]="[route.url]">{{ route.displayName }}</a>
+                            <a routerLink="/" [routerLink]="[route.url]">{{ route.displayName }}</a>
                         </li>
                         <li *ngIf="route.terminal" class="active" aria-current="page">{{ route.displayName }}</li>
                     </ul>

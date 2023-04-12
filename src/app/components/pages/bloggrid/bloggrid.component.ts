@@ -12,7 +12,7 @@ export class BloggridComponent implements OnInit {
 
   blogs : Blog [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor( private blogservice : BlogService) { }
 

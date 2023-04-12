@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class OrSokakLezzetiComponent implements OnInit {
   sokakLezzetis : OrSokakLezzeti [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private  sokakLezzetiService  :SokakLezzetiService ) { }
 

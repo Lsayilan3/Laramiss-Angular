@@ -12,7 +12,7 @@ export class OrganizasyonNisanComponent implements OnInit {
 
   orNisans : OrNisan [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private  nisanService : NisanService ) { }
 

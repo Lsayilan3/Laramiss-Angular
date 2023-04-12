@@ -14,7 +14,7 @@ export class OrganizasyonPartiStoreComponent implements OnInit {
 
   orDuguns : OrDugun [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private  orDugunService : OrDugunService ) { }
 

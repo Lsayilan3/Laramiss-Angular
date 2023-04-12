@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  getApiUrl: "https://api.kapadokyadavet.com/api",
+  getApiUrlPhoto: "https://api.kapadokyadavet.com",
 };

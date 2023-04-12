@@ -12,7 +12,7 @@ export class OrganizasyonSunnetComponent implements OnInit {
 
   orSunnets : OrSunnet [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private  sunnetService  : SunnetService) { }
 

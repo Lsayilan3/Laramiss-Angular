@@ -12,7 +12,7 @@ export class OrKokteylComponent implements OnInit {
 
   orKokteyls : OrKokteyl [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private  kokteylService  : KokteylService) { }
 

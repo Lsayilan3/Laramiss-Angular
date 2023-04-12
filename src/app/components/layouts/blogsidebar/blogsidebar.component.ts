@@ -9,12 +9,12 @@ export class BlogsidebarComponent implements OnInit {
 
   constructor() { }
   // Author img 
-  authorimg = '../../../../assets/img/aaımg/dron_140x140.jpg';
+  authorimg = '../../../../assets/img/aaimg/dron_140x140.jpg';
   // Popular feeds
   popularfeeds = [
-    {img:'../../../../assets/img/aaımg/renk.jpg',title:'Renkli İz Bırakan Anlar Nasıl Oluşur?',postdate:'24th March 2022'},
-    {img:'../../../../assets/img/aaımg/renk1.jpg',title:'Çiçek, Bitki Alerjiniz Varsa Ne Kullanırsınız?',postdate:'24th March 2022'},
-    {img:'../../../../assets/img/aaımg/renk2.jpg',title:'Ruh halini tütsü ile ayarlamak?',postdate:'24th March 2022'},
+    {img:'../../../../assets/img/aaimg/renk.jpg',title:'Renkli İz Bırakan Anlar Nasıl Oluşur?',postdate:'24th March 2022'},
+    {img:'../../../../assets/img/aaimg/renk1.jpg',title:'Çiçek, Bitki Alerjiniz Varsa Ne Kullanırsınız?',postdate:'24th March 2022'},
+    {img:'../../../../assets/img/aaimg/renk2.jpg',title:'Ruh halini tütsü ile ayarlamak?',postdate:'24th March 2022'},
   ];
   // Categories
   categories = [
@@ -32,15 +32,15 @@ export class BlogsidebarComponent implements OnInit {
   ];
   // Instagram Feeds
   instafeeds = [
-    {img:'../../../../assets/img/aaımg/in_80x80.jpg'},
-    {img:'../../../../assets/img/aaımg/indir1.jpg'},
-    {img:'../../../../assets/img/aaımg/in2_80x80.jpg'},
-    {img:'../../../../assets/img/aaımg/indir2.jpg'},
-    {img:'../../../../assets/img/aaımg/in4_80x80.jpg'},
-    {img:'../../../../assets/img/aaımg/in8_80x80.jpg'},
-    {img:'../../../../assets/img/aaımg/indir3.jpg'},
-    {img:'../../../../assets/img/aaımg/in7_80x80.jpg'},
-    {img:'../../../../assets/img/aaımg/indir.jpg'},
+    {img:'../../../../assets/img/aaimg/in_80x80.jpg'},
+    {img:'../../../../assets/img/aaimg/indir1.jpg'},
+    {img:'../../../../assets/img/aaimg/in2_80x80.jpg'},
+    {img:'../../../../assets/img/aaimg/indir2.jpg'},
+    {img:'../../../../assets/img/aaimg/in4_80x80.jpg'},
+    {img:'../../../../assets/img/aaimg/in8_80x80.jpg'},
+    {img:'../../../../assets/img/aaimg/indir3.jpg'},
+    {img:'../../../../assets/img/aaimg/in7_80x80.jpg'},
+    {img:'../../../../assets/img/aaimg/indir.jpg'},
    
   ];
   // Popular Tags
@@ -59,7 +59,7 @@ export class BlogsidebarComponent implements OnInit {
     {title:'müzik'},
   ];
   // Adv
-  advbanner= '../../../../assets/img/aaımg/adv-banner.jpg';
+  advbanner= '../../../../assets/img/aaimg/advbanner.jpg';
   ngOnInit(): void {
   }
 

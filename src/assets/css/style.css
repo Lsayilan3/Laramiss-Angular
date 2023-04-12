@@ -5215,7 +5215,7 @@ header.header-three.sigma-header .nav-container .menu-right-buttons .cart-dropdo
 
 .blog-style-2 .blog-post .blog-data .post-link:before {
     content: '';
-    width: 40px;
+    width: 30px;
     height: 2px;
     background-color: #fff;
     transition: opacity 1s ease, width 1s ease, margin 1s ease;

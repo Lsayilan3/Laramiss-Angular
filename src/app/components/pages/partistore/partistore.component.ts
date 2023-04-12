@@ -12,7 +12,7 @@ export class PartistoreComponent implements OnInit {
 
   partis : Parti [] =[];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private partiservice : PartiService) { }
 

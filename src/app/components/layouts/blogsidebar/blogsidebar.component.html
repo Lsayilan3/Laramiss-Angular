@@ -10,7 +10,7 @@
             <ul class="social-icon">
                 <li><a style="cursor: pointer;"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a style="cursor: pointer;"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/kapadokyaorganizasyonvedavet/"><i class="fab fa-instagram"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/kapadokyaorganizasyonvedavet/"><i class="fab fa-instagram"></i></a></li>
                 <li><a style="cursor: pointer;"><i class="fab fa-linkedin"></i></a></li>
                 <li><a style="cursor: pointer;"><i class="fab fa-youtube"></i></a></li>
             </ul>
@@ -33,7 +33,7 @@
                     <img src="{{popularfeed.img}}" alt="Image">
                 </div>
                 <div class="feed-desc">
-                    <h6><a href="blog-detail">{{popularfeed.title}}</a></h6>
+                    <h6><a routerLink="/blog-detail">{{popularfeed.title}}</a></h6>
                     <span class="time"><i class="far fa-calendar-alt"></i> {{popularfeed.postdate}}</span>
                 </div>
             </div>
@@ -44,7 +44,7 @@
         <h5 class="widget-title">Kategoriler</h5>
         <ul>
             <li *ngFor="let category of categories">
-                <a href="hediyelik">{{category.title}}<span *ngIf="category.numberofpost">{{category.numberofpost}}</span></a>
+                <a routerLink="/hediyelik">{{category.title}}<span *ngIf="category.numberofpost">{{category.numberofpost}}</span></a>
             </li>
         </ul>
     </div>
@@ -54,7 +54,7 @@
         <ul>
             <li><a style="cursor: pointer;"><i class="fab fa-facebook-f"></i></a></li>
             <li><a style="cursor: pointer;"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/kapadokyaorganizasyonvedavet/"><i class="fab fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/kapadokyaorganizasyonvedavet/"><i class="fab fa-instagram"></i></a></li>
             <li><a style="cursor: pointer;"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="mailto:"><i class="fab fa-google"></i></a></li>
         </ul>
@@ -64,7 +64,7 @@
         <h5 class="widget-title">Twitter Akışları</h5>
         <div class="twitter-looop">
             <div class="single-twitter" *ngFor="let twitterfeed of twitterfeeds">
-                <a href="#">
+                <a routerLink="/">
                     {{twitterfeed.tweet}}
                 </a>
                 <span class="date">{{twitterfeed.tweetdate}}</span>
@@ -82,7 +82,7 @@
     <div class="widget popular-tag-widget mb-40">
         <h5 class="widget-title">Popüler etiketler</h5>
         <ul>
-            <li *ngFor="let tag of tags"><a href="organizasyon">{{tag.title}}</a></li>
+            <li *ngFor="let tag of tags"><a routerLink="/organizasyon">{{tag.title}}</a></li>
         </ul>
     </div>
     <!-- Banner Ad Widget -->

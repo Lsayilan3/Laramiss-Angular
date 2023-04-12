@@ -12,7 +12,7 @@ export class OrAnimasyonComponent implements OnInit {
 
   orAnimasyones:OrAnimasyone[] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private animasyoneService : AnimasyoneService) { }
 

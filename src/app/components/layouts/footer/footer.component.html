@@ -7,7 +7,7 @@
                         <div class="col-lg-6">
                             <!--====== Back to top ======-->
                             <div class="sigma-backto-top">
-                                <a href="#" class="back-to-top" id="backToTop" *ngIf="isShow" (click)="gotoTop()" (window:scroll)="ScrolltoTop()">
+                                <a routerLink="/" class="back-to-top" id="backToTop" *ngIf="isShow" (click)="gotoTop()" (window:scroll)="ScrolltoTop()">
                                     <i class="fal fa-chevron-up"></i> Başa dönüş
                                 </a>
                             </div>
@@ -56,7 +56,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/kapadokyaorganizasyonvedavet/">
+                                    <a target="_blank" href="https://www.instagram.com/kapadokyaorganizasyonvedavet/">
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </li>
@@ -140,7 +140,7 @@
                             <ul>
                                 <li>
                                     <i class="flaticon-location-pin"></i>
-                                    <a href="contact"><span>Ofis Adres</span> Yeni Mahalle Milli İrade Caddesi No 47 <br> Nevşehir/Merkez</a>
+                                    <a routerLink="/contact"><span>Ofis Adres</span> Yeni Mahalle Milli İrade Caddesi No 47 <br> Nevşehir/Merkez</a>
                                 </li>
                             </ul>
                         </div>
@@ -155,16 +155,16 @@
             <div class="sigma-copyright-inner">
                 <div class="row">
                     <div class="col-lg-6 col-md-5 order-2 order-md-1">
-                        <p class="sigma-copyright-text">Copyright By@<a href="#">Kapadokya Davet Organizasyon</a> - 2022</p>
+                        <p class="sigma-copyright-text">Copyright By@<a routerLink="/">Kapadokya Davet Organizasyon</a> - 2023</p>
                     </div>
                     <div class="col-lg-6 col-md-7 order-1 order-md-2">
                         <div class="sigma-copyright-menu">
                             <ul>
                                 <li>
-                                    <a href="#">Kullanım Şartları</a>
+                                    <a routerLink="/">Kullanım Şartları</a>
                                 </li>
                                 <li>
-                                    <a href="#">Gizlilik Çevre Politikası</a>
+                                    <a routerLink="/">Gizlilik Çevre Politikası</a>
                                 </li>
                             </ul>
                         </div>

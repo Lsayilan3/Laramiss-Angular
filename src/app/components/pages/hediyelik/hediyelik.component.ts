@@ -12,7 +12,7 @@ export class HediyelikComponent implements OnInit {
 
   hediyeliks : Hediyelik [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor( private hediyelikservice : HediyelikService) { }
 

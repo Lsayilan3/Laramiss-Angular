@@ -12,9 +12,9 @@
                             <ng-template ngbNavContent>
                                 <div class="dashboard-content">
                                     <p class="text-white mb-30">Hello <b>John Benjamin</b> (not <b>John Benjamin</b>?
-                                        <a href="#">Log Out</a>)
+                                        <a routerLink="/">Log Out</a>)
                                     </p>
-                                    <p class="text-white">From Your Account Dashboard You can View Your <a href="#">Recent Orders</a>, Manage Your<a href="#">Shipping and Billing Addresses</a> and <a href="#">Edit Your Password and Account Details</a></p>
+                                    <p class="text-white">From Your Account Dashboard You can View Your <a routerLink="/#">Recent Orders</a>, Manage Your<a routerLink="/#">Shipping and Billing Addresses</a> and <a routerLink="/#">Edit Your Password and Account Details</a></p>
                                 </div>
                             </ng-template>
                         </li>
@@ -39,7 +39,7 @@
                                         <tbody>
                                             <tr *ngFor="let orderlist of orderlists">
                                                 <td class="product-remove text-center cw-align">
-                                                    <a href="#"><i class="fas fa-times"></i></a>
+                                                    <a routerLink="/contact"><i class="fas fa-times"></i></a>
                                                 </td>
                                                 <td data-title="Product" class="has-title">
                                                     <div class="product-thumbnail">
@@ -50,7 +50,7 @@
                                                 <td class="product-price text-white cw-align has-title" data-title="Order ID">#{{orderlist.id}}</td>
                                                 <td class="product-price text-white cw-align has-title" data-title="Order Date">{{orderlist.date}}</td>
                                                 <td data-title="Actions" class="has-title">
-                                                    <a href="#" class="main-btn btn-filled">Order Now</a>
+                                                    <a routerLink="/contact" class="main-btn btn-filled">Order Now</a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -78,14 +78,14 @@
                                             <h3>Billing Address</h3>
                                             <p>John Benjamin</p>
                                         </div>
-                                        <a href="#" class="btn-link">Edit</a>
+                                        <a routerLink="/contact" class="btn-link">Edit</a>
                                     </div>
                                     <div class="extra-info">
                                         <div class="shipping-info">
                                             <h3>Shipping Address</h3>
                                             <p>You have not Setup this Type of Address Yet.</p>
                                         </div>
-                                        <a href="#" class="btn-link">Add</a>
+                                        <a routerLink="/" class="btn-link">Add</a>
                                     </div>
                                 </div>
                             </ng-template>

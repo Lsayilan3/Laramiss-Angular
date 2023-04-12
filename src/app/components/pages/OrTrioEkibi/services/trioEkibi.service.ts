@@ -2,6 +2,7 @@ import { OrTrioEkibi } from './../models/ortrioekibi';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,7 @@ export class TrioEkibiService {
 
   getOrTrioEkibiList(): Observable<OrTrioEkibi[]> {
   
-    let newPath = this.apiUrl + "orTrioEkibis/getall"
+    let newPath = (environment.getApiUrl + "/orTrioEkibis/getall")
     return this.httpClient.get<OrTrioEkibi[]>(newPath)
   }
 

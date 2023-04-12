@@ -10,7 +10,7 @@ export class BreadcrumbComponent implements OnInit {
   constructor() { }
 
   // Image
-  breadcrumbimg = '../../../../assets/img/aaımg/04.jpg';
+  breadcrumbimg = '../../../../assets/img/aaimg/04.jpg';
   ngOnInit(): void {
   }
 

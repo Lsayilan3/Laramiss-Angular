@@ -12,7 +12,7 @@ export class OrganizasyonAcılısComponent implements OnInit {
 
   orAcilises : OrAcilis [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private acilisService : AcilisService ) { }
 

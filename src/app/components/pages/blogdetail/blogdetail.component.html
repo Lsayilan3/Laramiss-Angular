@@ -7,12 +7,12 @@
             <div class="col-lg-8">
                 <div class="news-details-box">
                     <div class="entry-content">
-                        <a href="#" class="cat">Businese</a>
+                        <a routerLink="/" class="cat">KURULUŞ</a>
                         <h2 class="title">Renkli İz Bırakan Anlar Nasıl Oluşur? </h2>
                         <ul class="post-meta">
-                            <li><a href="#"><i class="fal fa-user"></i>by Piklo D. Sindom</a></li>
-                            <li><a href="#"><i class="fal fa-calendar-alt"></i>24th March 2022</a></li>
-                            <li><a href="#"><i class="fal fa-comments"></i>54 Comments</a></li>
+                            <li><a routerLink="/"><i class="fal fa-user"></i>by Piklo D. Sindom</a></li>
+                            <li><a routerLink="/"><i class="fal fa-calendar-alt"></i>24th March 2023</a></li>
+                            <li><a routerLink="/"><i class="fal fa-comments"></i>54 Comments</a></li>
                         </ul>
                         <p class="mb-30">
                             Duygularınızı anlatmak, sürprizlerinizi daha anlamlı kılmak için özel günlerde ve size özel 
@@ -98,7 +98,7 @@
                             <div class="tag">
                                 <h5>İlgili Etiketler</h5>
                                 <ul>
-                                    <li *ngFor="let relatedtag of relatedtags"><a href="#">{{relatedtag.tag}}</a></li>
+                                    <li *ngFor="let relatedtag of relatedtags"><a routerLink="/">{{relatedtag.tag}}</a></li>
                                 </ul>
                             </div>
                             <div class="share text-md-right">
@@ -111,14 +111,14 @@
                         <div class="post-nav d-md-flex align-items-center justify-content-between">
                             <div class="prev-post">
                                 <span>Önceki Yazı</span>
-                                <a href="#">İş Yatırımdır </a>
+                                <a routerLink="/">İş Yatırımdır </a>
                             </div>
                             <span class="icon">
                                 <img src="{{blogicon}}" alt="icon">
                             </span>
                             <div class="next-post text-right">
                                 <span>Sonraki Konum</span>
-                                <a href="#">Az ama öz</a>
+                                <a routerLink="/">Az ama öz</a>
                             </div>
                         </div>
                         <div class="related-post mt-50">
@@ -129,8 +129,8 @@
                                         <div class="thumb" style="background-image: url({{relatedpost.img}});">
                                         </div>
                                         <div class="desc">
-                                            <a href="#" class="date"><i class="far fa-calendar-alt"></i>{{relatedpost.postdate}}</a>
-                                            <h4><a href="#">{{relatedpost.title}}</a></h4>
+                                            <a routerLink="/" class="date"><i class="far fa-calendar-alt"></i>{{relatedpost.postdate}}</a>
+                                            <h4><a routerLink="/">{{relatedpost.title}}</a></h4>
                                             <p>{{relatedpost.text}}
                                             </p>
                                         </div>
@@ -163,7 +163,7 @@
                                     <div class="desc-top">
                                         <h6>Rosalina Kelian</h6>
                                         <span class="date">19th May 2020</span>
-                                        <a href="#" class="reply-link"><i class="far fa-reply"></i>Reply</a>
+                                        <a routerLink="/#" class="reply-link"><i class="far fa-reply"></i>Reply</a>
                                     </div>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -178,7 +178,7 @@
                                             <div class="desc-top">
                                                 <h6>Rosalina Kelian</h6>
                                                 <span class="date">19th May 2020</span>
-                                                <a href="#" class="reply-link"><i class="far fa-reply"></i>Reply</a>
+                                                <a routerLink="/#" class="reply-link"><i class="far fa-reply"></i>Reply</a>
                                             </div>
                                             <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -195,7 +195,7 @@
                                     <div class="desc-top">
                                         <h6>Rosalina Kelian</h6>
                                         <span class="date">19th May 2020</span>
-                                        <a href="#" class="reply-link"><i class="far fa-reply"></i>Reply</a>
+                                        <a routerLink="/#" class="reply-link"><i class="far fa-reply"></i>Reply</a>
                                     </div>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

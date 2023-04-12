@@ -13,7 +13,7 @@ export class LazerkesimComponent implements OnInit {
 
   lazers :Lazer []= [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private lazerService : LazerService) { }
 

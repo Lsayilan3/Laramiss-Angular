@@ -13,7 +13,7 @@ export class LatestproComponent implements OnInit {
 
   ensonuruns : Ensonurun[]=[];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private ensonurunService : EnsonurunService){}
 

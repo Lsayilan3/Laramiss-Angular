@@ -12,7 +12,7 @@ export class OrEkipmanKiralamaComponent implements OnInit {
 
   orEkipmans : OrEkipman [] = [];
 
-  baseUrl :string=environment.getApiUrl;
+  baseUrl :string=environment.getApiUrlPhoto;
 
   constructor(private ekipmanService : EkipmanService) { }
 
