@@ -20,7 +20,7 @@ export class BlogdetailComponent implements OnInit {
   blogsocials = [
     {icon:'fa-facebook-f',url:''}, 
     {icon:'fab fa-instagram',url:'https://www.instagram.com/@kapadokyaorganizasyonvedavet/'},
-    {icon:'fa-twitter',url:''},
+    {icon:'fa-brands fa-x-twitter',url:''},
     {icon:'fa-google-plus-g',url:'mailto:ajanssahin@hotmail.com'},   
     // {icon:'fa-medium',url:'#'},
     // {icon:'fa-tumblr',url:'#'},
