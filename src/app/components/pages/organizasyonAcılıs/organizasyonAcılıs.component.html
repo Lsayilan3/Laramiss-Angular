@@ -7,9 +7,9 @@
                 <ng-template ngFor let-route [ngForOf]="parent.breadcrumbs">
                     <!-- <h2 class="page-title">{{ route.displayName }}</h2> -->
                     <ul class="breadcrumb-nav">
-                        <li><a routerLink="/">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li *ngIf="!route.terminal" class="breadcrumb-item">
-                            <a routerLink="/" [routerLink]="[route.url]">{{ route.displayName }}</a>
+                            <a href="/" [href]="[route.url]">{{ route.displayName }}</a>
                         </li>
                         <li *ngIf="route.terminal" class="active" aria-current="page">{{ route.displayName }}</li>
                     </ul>
@@ -45,18 +45,18 @@
                                             <!-- <span class="price discounted">{{organizasyon.tag}}</span> -->
                                         </div>
                                         <div class="button-group">
-                                            <!-- <a routerLink="/contact"><i class="far fa-heart"></i></a>
-                                            <a routerLink="/contact"><i class="far fa-sync-alt"></i></a> -->
-                                            <a routerLink="/organizasyon" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                            <!-- <a href="/contact"><i class="far fa-heart"></i></a>
+                                            <a href="/contact"><i class="far fa-sync-alt"></i></a> -->
+                                            <a href="/organizasyon" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
                                         </div>
                                     </div>
                                     <div class="desc text-center">
                                         <h4>
-                                            <a routerLink='/contact'>{{orAcilis.detay}} </a>
+                                            <a href='/contact'>{{orAcilis.detay}} </a>
                                         </h4>
                                         <!-- <span> {{organizasyon.detay}} </span> -->
                                          <!-- <span class="price">${{shopgrid.price}} <span>${{shopgrid.discountprice}}</span></span>   -->
-                                        <a routerLink="/contact" class="main-btn btn-filled mt-10">Add to Cart</a>
+                                        <a href="/contact" class="main-btn btn-filled mt-10">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>  

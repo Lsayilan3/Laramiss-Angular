@@ -6,9 +6,9 @@
                 <ng-template ngFor let-route [ngForOf]="parent.breadcrumbs">
                     <h2 class="page-title">{{ route.displayName }}</h2>
                     <ul class="breadcrumb-nav">
-                        <li><a routerLink="/">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li *ngIf="!route.terminal" class="breadcrumb-item">
-                            <a routerLink="/" [routerLink]="[route.url]">{{ route.displayName }}</a>
+                            <a href="/" [href]="[route.url]">{{ route.displayName }}</a>
                         </li>
                         <li *ngIf="route.terminal" class="active" aria-current="page">{{ route.displayName }}</li>
                     </ul>

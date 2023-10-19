@@ -8,7 +8,7 @@
         <h5 class="widget-title">Kategoriler</h5>
         <ul>
             <li *ngFor="let category of categories">
-                <a routerLink="/hediyelik">{{category.title}}<span *ngIf="category.numberofpost">{{category.numberofpost}}</span></a>
+                <a href="/hediyelik">{{category.title}}<span *ngIf="category.numberofpost">{{category.numberofpost}}</span></a>
             </li>
         </ul>
     </div> -->
@@ -30,7 +30,7 @@
                     <img src="{{popularproduct.img}}" alt="Image">
                 </div>
                 <div class="feed-desc desc">
-                    <h6><a routerLink='/shop-detail'>{{popularproduct.title}}</a></h6>
+                    <h6><a href='/shop-detail'>{{popularproduct.title}}</a></h6>
                     <span class="price">${{popularproduct.price}} <span>${{popularproduct.discountprice}}</span></span>
                 </div>
             </div>
@@ -46,8 +46,8 @@
                 </div>
                 <div class="feed-desc desc">
                     <div class="cart-flex">
-                        <h6><a routerLink="/#">{{cartproduct.title}}</a></h6>
-                        <a routerLink="/#" class="remove"><i class="fal fa-times"></i></a>
+                        <h6><a href="/#">{{cartproduct.title}}</a></h6>
+                        <a href="/#" class="remove"><i class="fal fa-times"></i></a>
                     </div>
                     <span class="price">${{cartproduct.price}} <span>${{cartproduct.discountprice}}</span></span>
                 </div>
@@ -58,8 +58,8 @@
                     <span>$51.00</span>
                 </div>
                 <div class="cart-buttons">
-                    <a routerLink='/cart' class="main-btn btn-filled">View Cart</a>
-                    <a routerLink='/checkout' class="main-btn btn-filled">Checkout</a>
+                    <a href='/cart' class="main-btn btn-filled">View Cart</a>
+                    <a href='/checkout' class="main-btn btn-filled">Checkout</a>
                 </div>
             </div>
         </div>
@@ -89,7 +89,7 @@
 
         <h5 class="widget-title">Popular Tags</h5>
         <ul>
-            <li *ngFor="let tag of tags"><a routerLink="/#">{{tag.title}}</a></li>
+            <li *ngFor="let tag of tags"><a href="/#">{{tag.title}}</a></li>
         </ul>
     </div>
 </div> -->

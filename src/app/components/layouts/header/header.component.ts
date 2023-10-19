@@ -10,6 +10,8 @@ import $ from 'jquery'
 export class HeaderComponent implements OnInit {
   constructor(@Inject(DOCUMENT) private document: Document) { }
   // Sticky Nav
+
+  
   @HostListener('window:scroll', [])
   onWindowScroll(event: Event) {
     //set up the div "id=nav"
@@ -59,6 +61,16 @@ export class HeaderComponent implements OnInit {
       });
     }
     megamenu()
+  }
+  menuItemText = 'Spot Ürünler'; // Başlangıçta gösterilen metin
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event): void {
+    if (window.innerWidth < 1285) {
+      this.menuItemText = 'Spot';
+    } else {
+      this.menuItemText = 'Spot Ürünler'; // Normal isme dönüş
+    }
   }
 
 }

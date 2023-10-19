@@ -33,7 +33,7 @@
                     <img src="{{popularfeed.img}}" alt="Image">
                 </div>
                 <div class="feed-desc">
-                    <h6><a routerLink="/blog-detail">{{popularfeed.title}}</a></h6>
+                    <h6><a href="/blog-detail">{{popularfeed.title}}</a></h6>
                     <span class="time"><i class="far fa-calendar-alt"></i> {{popularfeed.postdate}}</span>
                 </div>
             </div>
@@ -44,7 +44,7 @@
         <h5 class="widget-title">Kategoriler</h5>
         <ul>
             <li *ngFor="let category of categories">
-                <a routerLink="/hediyelik">{{category.title}}<span *ngIf="category.numberofpost">{{category.numberofpost}}</span></a>
+                <a href="/hediyelik">{{category.title}}<span *ngIf="category.numberofpost">{{category.numberofpost}}</span></a>
             </li>
         </ul>
     </div>
@@ -64,7 +64,7 @@
         <h5 class="widget-title">Twitter Akışları</h5>
         <div class="twitter-looop">
             <div class="single-twitter" *ngFor="let twitterfeed of twitterfeeds">
-                <a routerLink="/">
+                <a href="/">
                     {{twitterfeed.tweet}}
                 </a>
                 <span class="date">{{twitterfeed.tweetdate}}</span>
@@ -82,7 +82,7 @@
     <div class="widget popular-tag-widget mb-40">
         <h5 class="widget-title">Popüler etiketler</h5>
         <ul>
-            <li *ngFor="let tag of tags"><a routerLink="/organizasyon">{{tag.title}}</a></li>
+            <li *ngFor="let tag of tags"><a href="/organizasyon">{{tag.title}}</a></li>
         </ul>
     </div>
     <!-- Banner Ad Widget -->

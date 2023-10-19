@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-bloggridsidebar',
@@ -7,12 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BloggridsidebarComponent implements OnInit {
 
-  constructor() { }
+  getSafeHTML(value: string): SafeHtml {
+    return this.sanitizer.bypassSecurityTrustHtml(value);
+  }
 
+  constructor(private sanitizer: DomSanitizer) { }
+// 
   bloggridposts = [
    
     {img:'../../../../assets/img/aaimg/s4_370x260.jpg',title:'Size birinci sınıf Kapıda Karşılama Ürünleri sunuyoruz',postdate:'28th Aug 2023',text:'Kapıda Karşılama. sizlere yardımcı olabilecek ve kapıda değerli misafirlerinizi karşılayacak hostes bayan arkadaşlar yükünüzü azaltacaktır.',author:'Admin'},
     {img:'../../../../assets/img/aaimg/s1_370x260.jpg',title:'Size birinci sınıf Organizasyon Ürünleri sunuyoruz',postdate:'28th Aug 2023',text:'Kusursuzluğun gökyüzündeki yansıması. Organizasyonlarınız için ihtiyaç duyabileceğiniz birçok şeyi firmamızdan temin edebilirsiniz. ',author:'Admin'},
+
     {img:'../../../../assets/img/aaimg/s2_370x260.jpg',title:'Size birinci sınıf Kişiye Özel Hediyeler sunuyoruz',postdate:'28th Aug 2023',text:'Her biri birbirinden şık kişiye özel hediye çeşitleri arasında; özel gün konseptine uygun hediyelerirmiz le hizmetinizdeyiz ',author:'Admin'},
     {img:'../../../../assets/img/aaimg/s3_370x260.jpg',title:'Size birinci sınıf Mekana Özel Kutlama Ürünleri sunuyoruz',postdate:'28th Aug 2023',text:'Yemek ve eğlenceyi bir arada sunan, kutlama grupları için en iyi Kapadokya mekanları. Kutlama için fix menü  ve kokteyil.',author:'Admin'},
     {img:'../../../../assets/img/aaimg/altn_370x260.jpg',title:'Size birinci sınıf Gold Özel Servis Ürünleri sunuyoruz',postdate:'28th Aug 2023',text:'Yılların verdiği tecrübe ürün ve hizmet kalitemizi sizlere sunuyoruz. Renk seçeneği oluşturmak adına altın gümüş vb ürünlerimiz çeşitlendirilmiştir  .',author:'Admin'},

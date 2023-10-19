@@ -24,17 +24,17 @@
                             <span class="price discounted" *ngIf="relatedshop.tag2">{{relatedshop.tag2}}</span>
                         </div>
                         <div class="button-group">
-                            <a routerLink="/#"><i class="far fa-heart"></i></a>
-                            <a routerLink="/#"><i class="far fa-sync-alt"></i></a>
-                            <a routerLink="/#" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                            <a href="/#"><i class="far fa-heart"></i></a>
+                            <a href="/#"><i class="far fa-sync-alt"></i></a>
+                            <a href="/#" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
                         </div>
                     </div>
                     <div class="desc">
                         <h4>
-                            <a routerLink='/shop-detail'>{{relatedshop.title}}</a>
+                            <a href='/shop-detail'>{{relatedshop.title}}</a>
                         </h4>
                         <span class="price" *ngIf="relatedshop.price1">${{relatedshop.price1}} <span *ngIf="relatedshop.price2">${{relatedshop.price2}}</span></span>
-                        <a routerLink='/shop-detail' class="link"><i class="fal fa-arrow-right"></i></a>
+                        <a href='/shop-detail' class="link"><i class="fal fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

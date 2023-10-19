@@ -20,13 +20,13 @@
                         <tbody>
                             <tr *ngFor="let wishlistpost of wishlistposts">
                                 <td class="product-remove text-center cw-align">
-                                    <a routerLink="/#"><i class="fas fa-times"></i></a>
+                                    <a href="/#"><i class="fas fa-times"></i></a>
                                 </td>
                                 <td data-title="Product" class="has-title">
                                     <div class="product-thumbnail">
                                         <img src="{{wishlistpost.img}}" alt="product_thumbnail">
                                     </div>
-                                    <a routerLink='/shop-detail'>{{wishlistpost.name}}</a>
+                                    <a href='/shop-detail'>{{wishlistpost.name}}</a>
                                 </td>
                                 <td class="product-price text-white cw-align has-title" data-title="Price">
                                     <span class="product-currency"><b>$</b></span> <span class="product-amount"><b>{{wishlistpost.price}}</b></span>
@@ -39,7 +39,7 @@
                                     <span class="product-currency"><b>$</b></span> <span class="product-amount"><b>{{wishlistpost.total}}</b></span>
                                 </td>
                                 <td data-title="Actions" class="has-title">
-                                    <a routerLink="/#" class="main-btn btn-filled">Add to Cart</a>
+                                    <a href="/#" class="main-btn btn-filled">Add to Cart</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -48,10 +48,10 @@
                 <div class="share-wishlist text-center">
                     <h4>Share Your Wishlist</h4>
                     <div class="social-media">
-                        <a routerLink="/#"><i class="fab fa-facebook-f"></i></a>
-                        <a routerLink="/#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a routerLink="/#"><i class="fab fa-behance"></i></a>
-                        <a routerLink="/#"><i class="fab fa-linkedin"></i></a>
+                        <a href="/#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="/#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="/#"><i class="fab fa-behance"></i></a>
+                        <a href="/#"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@
                     <div class="banner-content">
                         <span class="promo-tag" data-animation="fadeInDown" data-delay=".6s"> Aşkla Süsleme Tasarımı</span>
                         <h1 class="title" data-animation="fadeInLeft" data-delay=".9s">Eski ve Modern <br> Emlak Tasarım</h1>
-                        <div class="book-wrapper"> <a routerLink='/shop-left' class="menu-btn" data-animation="fadeInUp" data-delay="1.1s">Shop Now<span class="book-arrow">
+                        <div class="book-wrapper"> <a href='/shop-left' class="menu-btn" data-animation="fadeInUp" data-delay="1.1s">Shop Now<span class="book-arrow">
                                     <i class="fal fa-arrow-right"></i>
                                 </span>
                             </a>
@@ -74,14 +74,14 @@
             <div class="col-lg-4 col-md-6" *ngFor="let locationpost of locationposts">
                 <div class="location-wrapper">
                     <div class="location-thumb">
-                        <a routerLink="/#">
+                        <a href="/#">
                             <img src="{{locationpost.img}}" alt="img">
                         </a>
                         <div class="location-content">
                             <div class="icon"> <i class="flaticon-location-pin"></i>
                             </div>
                             <h4>
-                                <a routerLink="/#">{{locationpost.title}} </a>
+                                <a href="/#">{{locationpost.title}} </a>
                             </h4>
                             <span>{{locationpost.text}}</span>
                         </div>
@@ -135,11 +135,11 @@
                     </div>
                     <p class="pr-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
                         you have to understand this.</p>
-                    <a routerLink='/contact' class="main-btn btn-filled mt-40">See More</a>
+                    <a href='/contact' class="main-btn btn-filled mt-40">See More</a>
                 </div>
             </div>
             <div class="col-lg-6 col-md-10 order-1 order-lg-2 wow fadeInRight" data-wow-delay=".3s">
-                <div class="video-wrap video-wrap-two mb-small" style="background-image: url({{Videobg}});"> <a routerLink="/http://www.youtube.com/embed/watch?v=EEJFMdfraVY" class="popup-video"><i class="fas fa-play"></i></a>
+                <div class="video-wrap video-wrap-two mb-small" style="background-image: url({{Videobg}});"> <a href="/http://www.youtube.com/embed/watch?v=EEJFMdfraVY" class="popup-video"><i class="fas fa-play"></i></a>
                 </div>
             </div>
         </div>

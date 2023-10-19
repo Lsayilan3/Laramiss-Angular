@@ -30,10 +30,10 @@
           <h1 class="title wow fadeInLeft" data-wow-delay=".5s">Yüksek-Son <br>Organizasyon Planlayıcı</h1>
           <ul>
             <li>
-              <a class="main-btn btn-filled wow fadeInUp" data-wow-delay=".7s" routerLink="/organizasyon">Satın al</a>
+              <a class="main-btn btn-filled wow fadeInUp" data-wow-delay=".7s" href="/organizasyon">Satın al</a>
             </li>
             <li>
-              <a class="main-btn btn-border wow fadeInUp" data-wow-delay=".9s" routerLink="/about">Şimdi Keşfet</a>
+              <a class="main-btn btn-border wow fadeInUp" data-wow-delay=".9s" href="/about">Şimdi Keşfet</a>
             </li>
           </ul>
         </div>
@@ -57,7 +57,7 @@
     <div class="categories-box-layout-inner">
       <div class="row">
         <div class="col-lg-3 col-sm-6" *ngFor="let categorypost of categoryposts">
-          <a routerLink="/organizasyon" class="categories-box">
+          <a href="/organizasyon" class="categories-box">
             <span class="icon">
               <i class="{{categorypost.icon}}"></i>
             </span>
@@ -112,7 +112,7 @@
           <div class="room-desc">
             <div class="row align-items-center">
               <div class="col-sm-8">
-                <h3><a routerLink='/shop-detail'>{{sliderTwo.title}} </a></h3>
+                <h3><a href='/shop-detail'>{{sliderTwo.title}} </a></h3>
                 <p>{{sliderTwo.detay}}</p>
               </div>
               <!-- <div class="col-sm-4">
@@ -156,7 +156,7 @@
       <h2>Trend Koleksiyonu</h2>
     </div>
     <div class="text-center mb-20">
-      <a routerLink="/contact">Daha fazlası
+      <a href="/contact">Daha fazlası
         <i class="fal fa-arrow-right ml-2"></i>
       </a>
     </div>
@@ -170,7 +170,7 @@
           </div>
           <div class="content-box-2">
             <h3 class="title">
-              <a routerLink="/{{trendingpost.url}}">{{trendingpost.title}}</a>
+              <a href="/{{trendingpost.url}}">{{trendingpost.title}}</a>
             </h3>
             <p>{{trendingpost.text}}</p>
             <!-- <span class="price">{{trendingpost.price}} </span> -->
@@ -195,10 +195,10 @@
             <h4 class="text-white mt-0">{{condospost.title}}</h4>
             <p class="text-white">{{condospost.text}}</p>
             <div class="book-btn">
-              <a routerLink="/{{condospost.url}}"><i class="fal fa-long-arrow-right"></i>Daha fazlası</a>
+              <a href="/{{condospost.url}}"><i class="fal fa-long-arrow-right"></i>Daha fazlası</a>
             </div>
           </div>
-          <a routerLink="/{{condospost.url}}" class="main-btn btn-border">İlk adım burada {{condospost.price}}</a>
+          <a href="/{{condospost.url}}" class="main-btn btn-border">İlk adım burada {{condospost.price}}</a>
         </div>
       </div>
     </div>
@@ -224,7 +224,7 @@
             başvurur. Eğer siz de kına gecesi organizasyonunuz için doğru şirketi arıyorsanız
             tüm ihtiyaçlarınıza cevap verecek planlamamız ve ürün çeşitliliğimiz ile hizmetinizdeyiz.
           </p>
-          <a routerLink="/organizasyon" class="main-btn btn-filled mt-40">Satın al</a>
+          <a href="/organizasyon" class="main-btn btn-filled mt-40">Satın al</a>
         </div>
       </div>
     </div>
@@ -244,7 +244,7 @@
                     <p class="pr-50">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, aliquip ex ea commodo consequat you have to understand this.
                     </p>
-                    <a routerLink='/shop-left' class="main-btn btn-filled mt-40">Shop now</a>
+                    <a href='/shop-left' class="main-btn btn-filled mt-40">Shop now</a>
                 </div>
             </div>
             <div class="px-2 w-100">
@@ -259,17 +259,17 @@
                                     <span class="price discounted" *ngIf="shoppost.tag2">{{shoppost.tag2}}</span>
                                 </div>
                                 <div class="button-group">
-                                    <a routerLink="/#"><i class="far fa-heart"></i></a>
-                                    <a routerLink="/#"><i class="far fa-sync-alt"></i></a>
-                                    <a routerLink="/#" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                    <a href="/#"><i class="far fa-heart"></i></a>
+                                    <a href="/#"><i class="far fa-sync-alt"></i></a>
+                                    <a href="/#" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
                                 </div>
                             </div>
                             <div class="desc">
                                 <h4>
-                                    <a routerLink='/shop-detail'>{{shoppost.title}}</a>
+                                    <a href='/shop-detail'>{{shoppost.title}}</a>
                                 </h4>
                                 <span class="price">{{shoppost.price1}} <span *ngIf="shoppost.price2">{{shoppost.price2}}</span></span>
-                                <a routerLink='/shop-detail' class="link"><i class="fal fa-arrow-right"></i></a>
+                                <a href='/shop-detail' class="link"><i class="fal fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -294,7 +294,7 @@
             olduğu düşüncesindeyiz. Bu nedenle; Başarının planlı ve prensipli bir çalışma sürecinden geçtiğine,
             Müşteri memnuniyetinin ise “işinizi işimiz” olarak görmekten geçtiğine inanıyoruz.
           </p>
-          <a routerLink="/hediyelik" class="main-btn btn-filled mt-40">Satın al</a>
+          <a href="/hediyelik" class="main-btn btn-filled mt-40">Satın al</a>
         </div>
       </div>
       <div class="px-2 w-100">
@@ -310,17 +310,17 @@
                   <!-- <span class="price discounted" *ngIf="shoppost.tag2">{{shoppost.tag2}}</span> -->
                 </div>
                 <div class="button-group">
-                  <a routerLink="/"><i class="far fa-heart"></i></a>
-                  <a routerLink="/"><i class="far fa-sync-alt"></i></a>
-                  <a routerLink="/" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                  <a href="/"><i class="far fa-heart"></i></a>
+                  <a href="/"><i class="far fa-sync-alt"></i></a>
+                  <a href="/" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
                 </div>
               </div>
               <div class="desc">
                 <h4>
-                  <a routerLink="/{{shoppost.url}}">{{shoppost.title}}</a>
+                  <a href="/{{shoppost.url}}">{{shoppost.title}}</a>
                 </h4>
                 <!-- <span class="price">{{shoppost.price1}} <span *ngIf="shoppost.price2">{{shoppost.price2}}</span></span> -->
-                <a routerLink="/{{shoppost.url}}" class="link"><i class="fal fa-arrow-right"></i></a>
+                <a href="/{{shoppost.url}}" class="link"><i class="fal fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -335,17 +335,17 @@
                                     <span class="price discounted" *ngIf="shoppost.tag2">{{shoppost.tag2}}</span> 
                                 </div>
                                 <div class="button-group">
-                                    <a routerLink="/hediyelik"><i class="far fa-heart"></i></a>
-                                    <a routerLink="/lazerkesim"><i class="far fa-sync-alt"></i></a> 
-                                    <a routerLink="/{{ensatan.url}}" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
+                                    <a href="/hediyelik"><i class="far fa-heart"></i></a>
+                                    <a href="/lazerkesim"><i class="far fa-sync-alt"></i></a> 
+                                    <a href="/{{ensatan.url}}" data-toggle="modal" data-target="#quickViewModal"><i class="far fa-eye"></i></a>
                                 </div>
                             </div>
                             <div class="desc">
                                 <h4>
-                                    <a routerLink="/{{ensatan.url}}">{{ensatan.title}}</a>
+                                    <a href="/{{ensatan.url}}">{{ensatan.title}}</a>
                                 </h4>
                                  <span class="price">{{shoppost.price1}} <span *ngIf="shoppost.price2">{{shoppost.price2}}</span></span> 
-                                <a routerLink="/{{ensatan.url}}" class="link"><i class="fal fa-arrow-right"></i></a>
+                                <a href="/{{ensatan.url}}" class="link"><i class="fal fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>       
@@ -380,19 +380,19 @@
                                          <span class="price discounted" *ngIf="ringspost.tag2">{{ringspost.tag2}}</span> -->
                   </div>
                   <div class="button-group">
-                    <!-- <a routerLink="/organizasyon"><i class="far fa-heart"></i></a>
-                                        <a routerLink="/organizasyon"><i class="far fa-sync-alt"></i></a> -->
-                    <a routerLink="/organizasyon" data-toggle="modal" data-target="#quickViewModal"><i
+                    <!-- <a href="/organizasyon"><i class="far fa-heart"></i></a>
+                                        <a href="/organizasyon"><i class="far fa-sync-alt"></i></a> -->
+                    <a href="/organizasyon" data-toggle="modal" data-target="#quickViewModal"><i
                         class="far fa-eye"></i></a>
                   </div>
                 </div>
                 <div class="desc">
                   <h4>
-                    <a routerLink="/organizasyon">{{ringspost.title}}</a>
+                    <a href="/organizasyon">{{ringspost.title}}</a>
                   </h4>
                   <span class="price">{{ringspost.price1}} <span
                       *ngIf="ringspost.price2">{{ringspost.price2}}</span></span>
-                  <a routerLink="/organizasyon" class="link"><i class="fal fa-arrow-right"></i></a>
+                  <a href="/organizasyon" class="link"><i class="fal fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -415,19 +415,19 @@
                                         <span class="price discounted" *ngIf="earingpost.tag2">{{earingpost.tag2}}</span> -->
                   </div>
                   <div class="button-group">
-                    <!-- <a routerLink="/organizasyon"><i class="far fa-heart"></i></a>
-                                        <a routerLink="/organizasyon"><i class="far fa-sync-alt"></i></a> -->
-                    <a routerLink="/organizasyon" data-toggle="modal" data-target="#quickViewModal"><i
+                    <!-- <a href="/organizasyon"><i class="far fa-heart"></i></a>
+                                        <a href="/organizasyon"><i class="far fa-sync-alt"></i></a> -->
+                    <a href="/organizasyon" data-toggle="modal" data-target="#quickViewModal"><i
                         class="far fa-eye"></i></a>
                   </div>
                 </div>
                 <div class="desc">
                   <h4>
-                    <a routerLink="/organizasyon">{{earingpost.title}}</a>
+                    <a href="/organizasyon">{{earingpost.title}}</a>
                   </h4>
                   <span class="price">{{earingpost.price1}} <span
                       *ngIf="earingpost.price2">{{earingpost.price2}}</span></span>
-                  <a routerLink="/organizasyon" class="link"><i class="fal fa-arrow-right"></i></a>
+                  <a href="/organizasyon" class="link"><i class="fal fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -451,19 +451,19 @@
                                         <span class="price discounted" *ngIf="necklesspost.tag2">{{necklesspost.tag2}}</span> -->
                   </div>
                   <div class="button-group">
-                    <!-- <a routerLink="/organizasyon"><i class="far fa-heart"></i></a>
-                                        <a routerLink="/organizasyon"><i class="far fa-sync-alt"></i></a> -->
-                    <a routerLink="/organizasyon" data-toggle="modal" data-target="#quickViewModal"><i
+                    <!-- <a href="/organizasyon"><i class="far fa-heart"></i></a>
+                                        <a href="/organizasyon"><i class="far fa-sync-alt"></i></a> -->
+                    <a href="/organizasyon" data-toggle="modal" data-target="#quickViewModal"><i
                         class="far fa-eye"></i></a>
                   </div>
                 </div>
                 <div class="desc">
                   <h4>
-                    <a routerLink="/organizasyon">{{necklesspost.title}}</a>
+                    <a href="/organizasyon">{{necklesspost.title}}</a>
                   </h4>
                   <span class="price">{{necklesspost.price1}} <span
                       *ngIf="necklesspost.price2">{{necklesspost.price2}}</span></span>
-                  <a routerLink="/organizasyon" class="link"><i class="fal fa-arrow-right"></i></a>
+                  <a href="/organizasyon" class="link"><i class="fal fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -487,19 +487,19 @@
                                         <span class="price discounted" *ngIf="braceletpost.tag2">{{braceletpost.tag2}}</span> -->
                   </div>
                   <div class="button-group">
-                    <!-- <a routerLink="/organizasyon"><i class="far fa-heart"></i></a>
-                                        <a routerLink="/organizasyon"><i class="far fa-sync-alt"></i></a> -->
-                    <a routerLink="/organizasyon" data-toggle="modal" data-target="#quickViewModal"><i
+                    <!-- <a href="/organizasyon"><i class="far fa-heart"></i></a>
+                                        <a href="/organizasyon"><i class="far fa-sync-alt"></i></a> -->
+                    <a href="/organizasyon" data-toggle="modal" data-target="#quickViewModal"><i
                         class="far fa-eye"></i></a>
                   </div>
                 </div>
                 <div class="desc">
                   <h4>
-                    <a routerLink="/organizasyon">{{braceletpost.title}}</a>
+                    <a href="/organizasyon">{{braceletpost.title}}</a>
                   </h4>
                   <span class="price">{{braceletpost.price1}} <span
                       *ngIf="braceletpost.price2">{{braceletpost.price2}}</span></span>
-                  <a routerLink="/organizasyon" class="link"><i class="fal fa-arrow-right"></i></a>
+                  <a href="/organizasyon" class="link"><i class="fal fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -523,19 +523,19 @@
                                         <span class="price discounted" *ngIf="armletspost.tag2">{{armletspost.tag2}}</span> -->
                   </div>
                   <div class="button-group">
-                    <!-- <a routerLink="/organizasyon"><i class="far fa-heart"></i></a>
-                                        <a routerLink="/organizasyon"><i class="far fa-sync-alt"></i></a> -->
-                    <a routerLink="/organizasyon" data-toggle="modal" data-target="#quickViewModal"><i
+                    <!-- <a href="/organizasyon"><i class="far fa-heart"></i></a>
+                                        <a href="/organizasyon"><i class="far fa-sync-alt"></i></a> -->
+                    <a href="/organizasyon" data-toggle="modal" data-target="#quickViewModal"><i
                         class="far fa-eye"></i></a>
                   </div>
                 </div>
                 <div class="desc">
                   <h4>
-                    <a routerLink="/organizasyon">{{armletspost.title}}</a>
+                    <a href="/organizasyon">{{armletspost.title}}</a>
                   </h4>
                   <span class="price">{{armletspost.price1}} <span
                       *ngIf="armletspost.price2">{{armletspost.price2}}</span></span>
-                  <a routerLink="/organizasyon" class="link"><i class="fal fa-arrow-right"></i></a>
+                  <a href="/organizasyon" class="link"><i class="fal fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -559,19 +559,19 @@
                                         <span class="price discounted" *ngIf="ankletspost.tag2">{{ankletspost.tag2}}</span> -->
                   </div>
                   <div class="button-group">
-                    <!-- <a routerLink="/organizasyon"><i class="far fa-heart"></i></a>
-                                        <a routerLink="/organizasyon"><i class="far fa-sync-alt"></i></a> -->
-                    <a routerLink="/organizasyon" data-toggle="modal" data-target="#quickViewModal"><i
+                    <!-- <a href="/organizasyon"><i class="far fa-heart"></i></a>
+                                        <a href="/organizasyon"><i class="far fa-sync-alt"></i></a> -->
+                    <a href="/organizasyon" data-toggle="modal" data-target="#quickViewModal"><i
                         class="far fa-eye"></i></a>
                   </div>
                 </div>
                 <div class="desc">
                   <h4>
-                    <a routerLink="/organizasyon">{{ankletspost.title}}</a>
+                    <a href="/organizasyon">{{ankletspost.title}}</a>
                   </h4>
                   <span class="price">{{ankletspost.price1}} <span
                       *ngIf="ankletspost.price2">{{ankletspost.price2}}</span></span>
-                  <a routerLink="/organizasyon" class="link"><i class="fal fa-arrow-right"></i></a>
+                  <a href="/organizasyon" class="link"><i class="fal fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -675,21 +675,21 @@
           <div class="thumb">
             <img src="{{latestpost.img}}" alt="images">
             <div class="button-group">
-              <!-- <a routerLink="/müzikeğlence"><i class="far fa-heart"></i></a>
-                            <a routerLink="/müzikeğlence"><i class="far fa-sync-alt"></i></a> -->
-              <a routerLink="/müzikeğlence" data-toggle="modal" data-target="#quickViewModal"><i
+              <!-- <a href="/müzikeğlence"><i class="far fa-heart"></i></a>
+                            <a href="/müzikeğlence"><i class="far fa-sync-alt"></i></a> -->
+              <a href="/müzikeğlence" data-toggle="modal" data-target="#quickViewModal"><i
                   class="far fa-eye"></i></a>
             </div>
             <div class="cart-block">
-              <a routerLink="/contact">Add to Cart</a>
+              <a href="/contact">Add to Cart</a>
             </div>
           </div>
           <div class="desc">
             <h4 class="mb-0">
-              <a routerLink="/müzikeğlence">{{latestpost.title}}</a>
+              <a href="/müzikeğlence">{{latestpost.title}}</a>
             </h4>
             <span class="price">{{latestpost.price}}</span>
-            <a routerLink="/müzikeğlence" class="link"><i class="fal fa-arrow-right"></i></a>
+            <a href="/müzikeğlence" class="link"><i class="fal fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -743,10 +743,10 @@
                     <div class="room-bg" style="background-image: url({{msimg1}});">
                     </div>
                     <div class="room-content">
-                        <h3><a routerLink='/shop-detail'>Ariel Ring</a></h3>
+                        <h3><a href='/shop-detail'>Ariel Ring</a></h3>
                         <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore magna aliqua.</p>
                     </div>
-                    <a routerLink='/shop-detail' class="room-link"><i class="fal fa-arrow-right"></i></a>
+                    <a href='/shop-detail' class="room-link"><i class="fal fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -756,10 +756,10 @@
                             <div class="room-bg" style="background-image: url({{msimg2}});">
                             </div>
                             <div class="room-content">
-                                <h3><a routerLink='/shop-detail'>Agonfly Jewelry</a></h3>
+                                <h3><a href='/shop-detail'>Agonfly Jewelry</a></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore magna aliqua.</p>
                             </div>
-                            <a routerLink='/shop-detail' class="room-link"><i class="fal fa-arrow-right"></i></a>
+                            <a href='/shop-detail' class="room-link"><i class="fal fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-6">
@@ -767,10 +767,10 @@
                             <div class="room-bg" style="background-image: url({{msimg3}});">
                             </div>
                             <div class="room-content">
-                                <h3><a routerLink='/shop-detail'>Coin Gold Necklace</a></h3>
+                                <h3><a href='/shop-detail'>Coin Gold Necklace</a></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore magna aliqua.</p>
                             </div>
-                            <a routerLink='/shop-detail' class="room-link"><i class="fal fa-arrow-right"></i></a>
+                            <a href='/shop-detail' class="room-link"><i class="fal fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -794,7 +794,7 @@
             biri Kapadokya…
             Peki Kapadokya balayı için özel paketlerimizi seçerken kampanyalarımızdan yararlanın.
           </p>
-          <a routerLink="/contact" class="main-btn btn-filled mt-40">Bize Ulaşın</a>
+          <a href="/contact" class="main-btn btn-filled mt-40">Bize Ulaşın</a>
         </div>
       </div>
       <div class="col-lg-6 col-md-10 order-1 order-lg-2 wow fadeInRight" data-wow-delay=".3s">
@@ -837,10 +837,10 @@
             <div class="post-date">
               {{blogpost.postdate}}
             </div>
-            <h3 class="post-title"><a routerLink="/organizasyonNisan">{{blogpost.title}}</a></h3>
-            <a routerLink="/organizasyonNisan" class="post-link"><span>{{blogpost.linktext}}</span></a>
+            <h3 class="post-title"><a href="/organizasyonNisan">{{blogpost.title}}</a></h3>
+            <a href="/organizasyonNisan" class="post-link"><span>{{blogpost.linktext}}</span></a>
           </div>
-          <a routerLink="/organizasyonNisan"></a>
+          <a href="/organizasyonNisan"></a>
         </article>
       </div>
     </ngx-slick-carousel>

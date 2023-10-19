@@ -1,0 +1,17 @@
+@media screen and (max-width: 1445px) {
+    .sigma-header .sigma-main-menu>.menu-item>a {
+        padding: 0 10px
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .sigma-header .sigma-main-menu>.menu-item>a {
+        padding: 0 5px
+    }
+}
+
+
+
+
+
+
